@@ -1,42 +1,62 @@
-# NORTH
+# NORTH application
 
-An English documentary map pilot with a left-hand 2015–2019 scenario timeline and right-hand map/detail zoom. Selecting a place or reaching zoom 15 reveals isometric mapped buildings and clickable fictional pedestrians. Six map anchors connect to dated photographs, regional references and prepared AI scenes.
+NORTH is an English-language documentary map pilot built with React, TypeScript, Vinext, and MapLibre GL JS. It follows six places in Pyongyang and Aoji from mapped geography into dated photographs and explicitly labeled reconstructions of everyday life.
 
-## Run
+At street zoom, contemporary mapped footprints become isometric buildings and fictional people move along mapped road lines. Building cards show reviewed photos where associated, original dates, map information, and sources. Person cards show imagined routines and thoughts, with optional on-device Gemini Nano rephrasing.
+
+## Quick start
+
+Use Node.js **22.13 or newer** and npm. Run these commands in this directory:
 
 ```sh
-npm install
+npm run install:ci
 npm run dev
+```
+
+The portable development server normally runs at `http://127.0.0.1:5173/`. Use the address printed in the terminal. Fresh clones default to the portable execution profile; checkout-local Sites tooling may select a managed profile.
+
+## Checks and build
+
+```sh
 npx tsc --noEmit
-node --experimental-strip-types scripts/check-content.mjs
+node scripts/check-content.mjs
+node scripts/check-residents.mjs
 npm run build
 ```
 
-The application is in this `site` directory. Sites owns the private deployment; `.openai/hosting.json` contains its project ID. Do not create another site for this checkout.
+`npm run start` serves the built Worker locally through Wrangler. It requires a successful build; it is not a deployment command. Keep the checked-in npm lockfile and use the supplied installation wrapper for repeatable setup.
 
-Set `MAPTILER_KEY` as a runtime deployment variable to use MapTiler satellite tiles. The public browser key must be restricted to the local / deployed domains in MapTiler. Without it, the map uses NASA's 2004 Blue Marble composite for overview and contemporary OpenStreetMap tiles for regional context. Street rendering uses the checked-in OSM extract, not fabricated geometry. Map/provider dates are not treated as observations of the selected scenario year.
+## Configuration
 
-## Content and evidence
+| Setting | Purpose | Default |
+| --- | --- | --- |
+| `MAPTILER_KEY` | Public, domain-restricted MapTiler browser key supplied to the server/runtime | Empty: NASA overview and contemporary OSM references |
+| `.openai/hosting.json` | Existing Sites project identity and logical hosting configuration | Reuse the checked-in project; do not register a replacement |
+| `.sites-runtime/execution-profile.json` | Local tooling's execution-profile selection | Absent in fresh clones: portable |
 
-- `lib/content.ts`: Region, Place, Scene, Source and Claim records with original dates, locations, rights and limitations.
-- `public/neighborhoods.geojson`: ODbL derived OSM roads, rails and building footprints, downloaded 8 October 2026. Heights without OSM tags are illustrative. Geometry is contemporary; historical continuity is not verified.
-- `public/geography.geojson`: generalized Natural Earth country boundaries (public domain).
-- `public/scenes`: resized attributed Commons photographs and six imagegen reconstructions, plus one transparent pedestrian sprite.
-- `content/production.json` and `content/shop-prompt.txt`: production briefs, available exact prompt, sources and editorial inspection records. Delegated originals did not return their exact tool prompts; those records are explicitly identified as retained briefs.
-- `content/asset-rights.json`: exact source pages and licensing for served photograph derivatives.
+The map key is returned by `/api/map-config` for browser use. It is not a confidential server credential. Restrict it to allowed domains in the provider dashboard and supply it through local process or hosted runtime configuration. Never commit a real key.
 
-People, thoughts, routes, routines and rendered appearances are explicitly fictional/inferred. Years select a scenario, not five separately documented historical worlds. Generated scene assets remain shared across the range; original photographic dates stay visible. Aoji uses labeled Namyang / Chongjin regional context. The apartment kitchen is regional household reconstruction, not a verified interior behind the selected window.
+Gemini Nano is detected through the browser's `LanguageModel` API. It requires no API key and is only started by a user action. Unsupported devices and failed or rejected generation retain the prepared thought. The product uses English input and output. Native inference remains an outstanding device check; see [validation](docs/validation.md).
 
-Unsupported WebGL falls back to the place list. Image transitions preload the target and retain the current view on failure. Reduced-motion users see still pedestrians and instant camera transitions. Photos preserve aspect ratio; pan and detail zoom stop at available image resolution. Scene, place, region and year round-trip through the URL and browser history.
+## Source map
 
-Native WebMCP registers state, place navigation, scene navigation and evidence tools when `document.modelContext` or the earlier `navigator.modelContext` API exists. Sources: https://developer.chrome.com/docs/ai/webmcp/imperative-api . Ordinary browsers require no polyfill.
+- `app/page.tsx`: exploration controller, navigation, UI composition, and native WebMCP tools.
+- `components/map-view.tsx`: map providers, mapped geometry, camera transitions, building selection, and fictional pedestrians.
+- `components/scene-viewer.tsx`: aspect-preserving image detail, pan, hotspots, and bounded zoom.
+- `components/building-panel.tsx`, `person-panel.tsx`, `evidence-panel.tsx`: information and provenance.
+- `lib/content.ts`: reviewed Region, Place, Scene, Source, and Claim records.
+- `lib/exploration.ts`: URL parsing, serialization, and interpolation along mapped roads.
+- `lib/resident.ts`: contextual fictional routines, Nano prompts, output checks, and session cleanup.
+- `content/asset-rights.json`, `production.json`, `shop-prompt.txt`: asset rights and production records.
+- `content/qa.md`: dated review results and explicit gaps.
+- `public/`: served photographs, generated scenes, map data, and MapLibre worker/license.
 
-### Building information and thoughts
+## Documentation
 
-Click an extruded footprint for its information card; documented place pins also open cards with the reviewed photo / scene gallery. Photos are associated with a footprint only through an explicit reviewed source match, never by proximity. Unmatched buildings retain an honest missing-photo state. Desktop cards use the right side; small screens use the bottom sheet.
+Start with [development](docs/development.md), then read [architecture](docs/architecture.md), [evidence policy](docs/evidence-policy.md), and [validation](docs/validation.md). The [roadmap](docs/roadmap.md) distinguishes current implementation from remaining work. [Repository workflow](docs/repository-workflow.md) explains project commits and the separate Sites source history.
 
-`lib/resident.ts` supplies fictional role/routine context, a stable year-dependent draft, source dates and limitations. `components/person-panel.tsx` probes Chrome's built-in `LanguageModel` and offers optional, user-triggered Gemini Nano generation. It rephrases the draft without requesting new historical claims. Output is constrained JSON and remains labeled AI Reconstruction. Unsupported devices, failures and rejected output retain the prepared scenario. Nothing is sent to an external model service, and no API key is required. A model can still produce an inaccurate rephrasing; fictional output is never treated as evidence.
+## Pilot limits
 
-Requirements and availability are determined at runtime, using the [Chrome Prompt API documentation](https://developer.chrome.com/docs/ai/prompt-api) (reviewed 9 October 2026). Desktop Chrome 148+ is the documented web baseline, with hardware/storage requirements and a first-use model download. Mobile is unsupported. The product requests English, one of the documented languages. Sites displayed within an embedding browser may have different availability; open the private site in supported desktop Chrome to try generation. Gemma is a separate deployment option and is not loaded by this build.
+The timeline selects a scenario year, not five separately observed historical worlds. Photographs retain their capture dates; generated assets are shared across 2015–2019. Contemporary geometry does not prove historical continuity. Missing heights and rendered appearance are inferred. Aoji includes explicitly labeled Namyang and Chongjin regional references, and Haksong footprint coverage is sparse. The apartment kitchen is a regional household reconstruction, not a verified interior or identified resident.
 
-Additional check: `node scripts/check-residents.mjs`. Native Nano inference needs a supported device; the automated adapter checks use a test double.
+No free-roaming 3D world, video, live image generation, verified annual world changes, or public-figure reenactment is included in this pilot.
