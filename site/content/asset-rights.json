@@ -1,0 +1,84 @@
+{
+  "photographs": [
+    {
+      "asset": "/scenes/apartment.webp",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Building_on_Kwangbok_Street_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Building_on_Kwangbok_Street_1.jpg",
+      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Christophe95\" title=\"User:Christophe95\">Christophe95</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Downscaled to 3000 px wide when needed and converted to WebP. Interactive cropping is a display transformation.",
+      "metadata": {
+        "captureDate": "2018-10-10 17:08:02",
+        "published": "2021-01-28T21:16:27Z",
+        "locationNotes": "See scene and source records for object versus camera coordinates and regional proxies."
+      }
+    },
+    {
+      "asset": "/scenes/bus.webp",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Bus_in_Pyongyang_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bus_in_Pyongyang_-_01.jpg",
+      "creator": "Jan Engelhardt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Downscaled to 3000 px wide when needed and converted to WebP. Interactive cropping is a display transformation.",
+      "metadata": {
+        "captureDate": "2019-07-24 07:58:39",
+        "published": "2023-11-18T17:14:57Z",
+        "locationNotes": "See scene and source records for object versus camera coordinates and regional proxies."
+      }
+    },
+    {
+      "asset": "/scenes/store.webp",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/0/06/Kwangbok_Department_Store%2C_Pyongyang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kwangbok_Department_Store,_Pyongyang.jpg",
+      "creator": "Jan Engelhardt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Downscaled to 3000 px wide when needed and converted to WebP. Interactive cropping is a display transformation.",
+      "metadata": {
+        "captureDate": "2019-08-09 18:25:48",
+        "published": "2023-11-18T17:43:37Z",
+        "locationNotes": "See scene and source records for object versus camera coordinates and regional proxies."
+      }
+    },
+    {
+      "asset": "/scenes/housing.webp",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/3/35/%E5%8D%97%E9%99%BD%E5%8A%B4%E5%83%8D%E8%80%85%E5%8C%BA%E3%81%AE%E8%A5%BF%E5%81%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E9%99%BD%E5%8A%B4%E5%83%8D%E8%80%85%E5%8C%BA%E3%81%AE%E8%A5%BF%E5%81%B4.jpg",
+      "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Senkaku_Islands&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Senkaku Islands (page does not exist)\">Senkaku Islands</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Downscaled to 3000 px wide when needed and converted to WebP. Interactive cropping is a display transformation.",
+      "metadata": {
+        "captureDate": "2018-11-11",
+        "published": "2018-11-11T10:22:14Z",
+        "locationNotes": "See scene and source records for object versus camera coordinates and regional proxies."
+      }
+    },
+    {
+      "asset": "/scenes/railway.webp",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/e/ef/%E5%8D%97%E9%99%BD%E5%9B%BD%E5%A2%83%E7%B7%9A%E3%81%A8%E7%9B%A3%E8%A6%96%E5%A1%94%E3%80%81%E3%81%8A%E3%82%88%E3%81%B3%E5%92%B8%E5%8C%97%E7%B7%9A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E9%99%BD%E5%9B%BD%E5%A2%83%E7%B7%9A%E3%81%A8%E7%9B%A3%E8%A6%96%E5%A1%94%E3%80%81%E3%81%8A%E3%82%88%E3%81%B3%E5%92%B8%E5%8C%97%E7%B7%9A.jpg",
+      "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Senkaku_Islands&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Senkaku Islands (page does not exist)\">Senkaku Islands</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Downscaled to 3000 px wide when needed and converted to WebP. Interactive cropping is a display transformation.",
+      "metadata": {
+        "captureDate": "2018-11-11",
+        "published": "2018-11-11T10:22:10Z",
+        "locationNotes": "See scene and source records for object versus camera coordinates and regional proxies."
+      }
+    }
+  ],
+  "mapWorker": {
+    "source": "MapLibre GL JS 6.13.0",
+    "license": "BSD-3-Clause",
+    "licenseUrl": "https://github.com/maplibre/maplibre-gl-js/blob/v6.13.0/LICENSE.txt"
+  },
+  "geometry": {
+    "source": "OpenStreetMap contributors",
+    "license": "ODbL 1.0",
+    "download": "/neighborhoods.geojson"
+  }
+}

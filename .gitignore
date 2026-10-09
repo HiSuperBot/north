@@ -1,0 +1,18 @@
+# Local research downloads, screenshots, and deployment packages.
+# Reviewed source and asset records live in site/content/.
+/research/
+
+# Optional, checkout-local Sites source repository metadata.
+/site/.git/
+
+# Workspace tool state and operating-system files.
+/.agents/
+/.codex/
+.DS_Store
+
+# Credentials and private runtime configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
