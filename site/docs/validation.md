@@ -22,6 +22,7 @@ Mobile-sized viewport review is responsive-layout testing; it is not a complete 
 npx tsc --noEmit
 node scripts/check-content.mjs
 node scripts/check-residents.mjs
+node scripts/check-street-simulation.mjs
 npm run build
 ```
 
@@ -30,6 +31,7 @@ npm run build
 | TypeScript | Component and data contracts | Does not prove runtime/device behavior |
 | Content integrity | Six places, twelve scenes, source IDs, independent-corroboration policy, graph, assets, 60 year/scene URL round trips, invalid URLs, rights records, road interpolation | Does not verify each historical claim against its source |
 | Resident checks | 720 place/year/person contexts, retained source dates, explicit building-photo association, Nano API contract/progress, rejected output, cancellation, cleanup | Uses a test double for Nano; it is not native inference |
+| Street simulation | Six placement pools and 10,472 on-road motion samples, stable route identities, spacing, unsuitable roads, endpoint rests, and closed loops | Illustrative movement is not observed pedestrian behavior |
 | Build | Client and Worker-compatible production output | A passing build is not a successful hosted deployment |
 
 These are executable consistency checks, not a replacement for editorial review. When the approved content scope changes, adjust the expected counts with the content itself.
@@ -55,6 +57,9 @@ Use this for affected product changes. Record the environment, actual result, da
 - [ ] An unrelated building must not inherit a nearby photograph.
 - [ ] Switch gallery image and open evidence; confirm it describes that image.
 - [ ] Click a pedestrian directly; confirm only the person inspector opens.
+- [ ] Select and focus a pedestrian; confirm individual pause, visible selection, and retained identity after a camera change.
+- [ ] Use the person toolbar action; select a visible walker or show an honest unavailable notice.
+- [ ] Close evidence with Escape; retain the underlying person or scene.
 - [ ] Confirm all prepared/generated thought and image labels stay visible.
 - [ ] Confirm source dates, proxy locations, temporal mismatches, attribution, and original links.
 - [ ] Confirm no arbitrary confidence percentages or duplicated independent evidence claims.

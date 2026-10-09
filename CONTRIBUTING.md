@@ -21,6 +21,7 @@ Run checks from `site/`:
 npx tsc --noEmit
 node scripts/check-content.mjs
 node scripts/check-residents.mjs
+node scripts/check-street-simulation.mjs
 npm run build
 ```
 

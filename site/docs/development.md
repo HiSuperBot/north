@@ -27,6 +27,7 @@ Run these from the application directory:
 | `npx tsc --noEmit` | Check TypeScript without emitting app files |
 | `node scripts/check-content.mjs` | Check content graph, sources, rights, URLs, and road interpolation |
 | `node scripts/check-residents.mjs` | Check scenario context and the Nano adapter with a test double |
+| `node scripts/check-street-simulation.mjs` | Check placement, stable identities, and movement on source road lines |
 | `npm run build` | Build client assets and a Worker-compatible server |
 | `npm run start` | Serve the built Worker locally through Wrangler |
 

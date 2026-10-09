@@ -7,6 +7,7 @@ This is a working pilot, not a claim that every original MVP acceptance criterio
 - Two regions, six map anchors, twelve scene records, five original-photo derivatives, six generated life images, and one fictional pedestrian sprite.
 - Left-hand scenario-year selection for 2015–2019 and right-hand zoom/detail controls.
 - Mapped isometric street rendering, clickable people, contextual prepared thoughts, and photo/information cards for buildings and documented places.
+- Stable pedestrian identities and route progress, road-length spacing, varied illustrative speeds, individual selection pause, and desktop/mobile thought panels.
 - Element-level evidence, regional/time qualifications, source rights records, and persistent reconstruction labels.
 - Optional user-triggered Nano rephrasing with unsupported/error fallback.
 - URL/history navigation, image-load retention, reduced motion, and place-list fallback.
@@ -16,7 +17,7 @@ This is a working pilot, not a claim that every original MVP acceptance criterio
 The user's accepted priority is people movement, building presentation, and click behavior. NASA / OSM remains the selected provider path for now.
 
 1. Validate native Nano and touch interaction on supported physical devices. Preserve the same fictional-thought/evidence boundaries.
-2. Improve pedestrian spacing, route variety, visible selection, and interaction stability while keeping positions tied to reviewed map lines. More realistic movement must not imply observed population counts or schedules.
+2. Extend route variety and review dense or sparse viewpoints beyond the initial spacing, persistent selection, and movement improvements. Keep positions tied to reviewed map lines; movement must not imply observed population counts or schedules.
 3. Improve building presentation only where footprint, height, facade, or period evidence supports it. Keep illustrative attributes distinguishable from mapped records.
 4. Review information-panel usability at constrained widths and during repeated map interactions.
 

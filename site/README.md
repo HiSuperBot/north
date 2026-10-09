@@ -21,6 +21,7 @@ The portable development server normally runs at `http://127.0.0.1:5173/`. Use t
 npx tsc --noEmit
 node scripts/check-content.mjs
 node scripts/check-residents.mjs
+node scripts/check-street-simulation.mjs
 npm run build
 ```
 
@@ -47,6 +48,7 @@ Gemini Nano is detected through the browser's `LanguageModel` API. It requires n
 - `lib/content.ts`: reviewed Region, Place, Scene, Source, and Claim records.
 - `lib/exploration.ts`: URL parsing, serialization, and interpolation along mapped roads.
 - `lib/resident.ts`: contextual fictional routines, Nano prompts, output checks, and session cleanup.
+- `lib/street-simulation.ts`: length-aware placement and stable, bounded fictional movement on mapped roads.
 - `content/asset-rights.json`, `production.json`, `shop-prompt.txt`: asset rights and production records.
 - `content/qa.md`: dated review results and explicit gaps.
 - `public/`: served photographs, generated scenes, map data, and MapLibre worker/license.

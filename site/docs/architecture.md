@@ -43,7 +43,11 @@ Year selection changes the scenario state and prepared thought variant. It does 
 - Height tags are used when present; levels can supply an inferred height. The fallback height and rendered colors are illustrative. Footprints do not establish height, use, occupancy, or historical appearance.
 - Areas with insufficient footprint coverage retain the underlying reference map. Missing geometry is not replaced with invented buildings.
 
-Up to 24 fictional sprites follow nearby mapped road segments. Movement uses segment-length interpolation, a repeated forward/backward phase, and reduced-motion/pause controls. It does not model observed routes, schedules, traffic, or population density. Occluded sprites are hidden and removed from keyboard navigation. Marker clicks stop event propagation so a person or place does not also select a building behind it.
+Up to 24 fictional sprites follow eight nearby eligible mapped road lines. `lib/street-simulation.ts` distributes one to three people by road length and excludes very short paths, steps, and high-speed roads. The static extract's feature ordinal and slot identify each sprite; retained markers keep their route and elapsed time across camera changes. This identity is local simulation state, not a person identifier or a historical record.
+
+Movement uses segment-length interpolation with illustrative speeds of 1.05–1.45 m/s. Open routes reverse after a short endpoint rest; closed routes wrap continuously. Hover, keyboard focus, and selection pause that individual; the toolbar pause and reduced-motion setting stop all walkers. Selected people have a ring and text label. The inspect-person action selects an unobscured, visible marker or reports that none is available. Hidden image scenes and background tabs suspend movement updates.
+
+The simulation does not model observed routes, schedules, traffic, or population density. Occluded sprites are hidden and removed from keyboard navigation. Marker clicks stop event propagation so a person or place does not also select a building behind it. Zooming back to the regional map clears street inspectors.
 
 A map failure leaves the place list available. The map container observes layout changes when a desktop building panel opens. Selected building color is a UI highlight, not a change to the source data.
 
@@ -56,10 +60,12 @@ The controller preloads a target before committing a scene transition. A load fa
 ## Information panels
 
 - **Building panel:** a non-modal right sheet on desktop, bottom sheet on small screens. It shows a reviewed photo/gallery when associated, metadata, limits, and original sources. `placeForBuilding()` matches explicit source URLs; proximity alone never assigns a photo.
-- **Person panel:** an imagined role, activity, scenario location/year, inner thought, and regional context. No real identity or testimony is represented.
+- **Person panel:** an imagined role, activity, scenario location/year, inner thought, and regional context. It reserves desktop map space and uses a full-width mobile bottom panel with a persistent close control. No real identity or testimony is represented.
 - **Evidence panel:** a modal provenance sheet for the current scene, selected building, or fictional resident context. Repeated aliases of one original source are deduplicated in the source list.
 
 A gallery's evidence action opens the evidence for the displayed image. All generated images remain labeled AI Reconstruction, while element-level claim labels describe the evidence for particular details.
+
+Escape is handled by the active sheet before the exploration shortcut. Dismissing evidence preserves the underlying person, building, or scene; it must not also navigate back or clear a street selection.
 
 ## Resident thoughts and Gemini Nano
 
@@ -97,6 +103,6 @@ These tools use the same state transitions and content as the UI. Registration i
 | Geographic rendering | `components/map-view.tsx`, `public/neighborhoods.geojson` |
 | Image exploration | `components/scene-viewer.tsx` |
 | Metadata and evidence | `lib/content.ts`, `components/evidence-panel.tsx` |
-| Fictional residents | `lib/resident.ts`, `components/person-panel.tsx` |
+| Fictional residents | `lib/resident.ts`, `lib/street-simulation.ts`, `components/person-panel.tsx` |
 | Runtime provider key | `lib/map-config.ts`, `app/api/map-config/route.ts`, `build/sites-worker.ts` |
-| Integrity checks | `scripts/check-content.mjs`, `scripts/check-residents.mjs` |
+| Integrity checks | `scripts/check-content.mjs`, `scripts/check-residents.mjs`, `scripts/check-street-simulation.mjs` |

@@ -10,7 +10,7 @@ The central rule is to preserve what sources establish and identify what has bee
 
 - A left-hand timeline selects a scenario year from 2015 to 2019; the right-hand controls change map or image detail.
 - Street zoom shows mapped roads, railway lines, extruded buildings, and fictional walkers. Buildings open a photo and information panel on desktop or a bottom sheet on small screens.
-- People expose an imagined role, routine, and inner thought. Supported browsers can optionally rephrase a prepared thought with on-device Gemini Nano.
+- People expose an imagined role, routine, and inner thought. Selection pauses and highlights that person; other walkers keep moving. Supported browsers can optionally rephrase a prepared thought with on-device Gemini Nano.
 - Photographs and AI-generated scenes have persistent production labels. The evidence panel retains original source dates, locations, reuse conditions, and limitations.
 - Exploration state survives refresh and browser history. Place lists remain usable when map rendering fails.
 
@@ -32,6 +32,7 @@ Open the address printed by the server, normally `http://127.0.0.1:5173/`. No ma
 npx tsc --noEmit
 node scripts/check-content.mjs
 node scripts/check-residents.mjs
+node scripts/check-street-simulation.mjs
 npm run build
 ```
 

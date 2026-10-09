@@ -2,7 +2,19 @@
 
 This file records notable product and documentation changes. The pilot has not yet adopted numbered releases.
 
-## Unreleased
+## Private pilot update — 2026-10-10
+
+### Street interaction
+
+- Preserve pedestrian identities and route progress across camera changes; distribute people by mapped road length and use varied illustrative walking speeds with endpoint rests.
+- Pause the hovered, keyboard-focused, or selected pedestrian and show a selection ring. The toolbar now selects a visible mapped pedestrian instead of creating an unrelated person card.
+- Use a desktop side panel and a full-width mobile thought sheet, with more visible map space and a close control that remains reachable while scrolling.
+- Keep Escape scoped to the topmost evidence sheet so it preserves the person or scene underneath.
+- Add motion checks across all six places, including source-road containment, spacing, unsuitable roads, identity stability, endpoint rests, and closed loops.
+
+TypeScript, content/resident/street checks, documentation links, and the production build passed. The existing owner-private Site was updated successfully. Native Nano inference and physical-device review remain pending.
+
+## Repository documentation — 2026-10-09
 
 ### Documentation and repository
 
