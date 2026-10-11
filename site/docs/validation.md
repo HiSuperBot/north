@@ -24,6 +24,7 @@ node scripts/check-content.mjs
 node scripts/check-residents.mjs
 node scripts/check-street-simulation.mjs
 node scripts/check-street-entities.mjs
+node scripts/check-diorama.mjs
 npm run build
 ```
 
@@ -34,6 +35,7 @@ npm run build
 | Resident checks | 960 place/year/person contexts, retained source dates, explicit building-photo association, Nano API contract/progress, rejected output, cancellation, cleanup | Uses a test double for Nano; it is not native inference |
 | Street simulation | Six placement pools and 10,472 on-road motion samples, stable route identities, spacing, unsuitable roads, endpoint rests, and closed loops | Illustrative movement is not observed pedestrian behavior |
 | Dated street entities | Forty place/year combinations; JSA default and before/after states; parade-only year; invalid/legacy scenario URLs; assets/claims; 8,136 mapped road/rail motion samples | Contextual movement and generated miniatures remain fictional |
+| Pyongyang diorama | Thirteen self-contained GLBs, hashes, rights, dimensions, ground/forward orientation, motion pivots, draw-call and size budgets, previews, pilot scope and the reviewed apartment footprint | Does not prove historical dimensions, universal frame rate or physical device support |
 | Pages artifact | Built HTML and base paths, all scene images, map data/worker, representative sprites, absence of private/runtime metadata | Does not prove an Actions deployment succeeded |
 | Build | Client and Worker-compatible production output | A passing build is not a successful hosted deployment |
 

@@ -2,6 +2,14 @@
 
 This file records notable product and documentation changes. The pilot has not yet adopted numbered releases.
 
+## Pyongyang miniature-diorama pilot — 2026-10-11
+
+- Produce 13 genuine Blender GLBs, compact WebP portraits, a reusable `.blend`, reproducible construction/validation scripts, and English provenance/rights records.
+- Add a lazy Three.js layer sharing the MapLibre camera and depth, with batched mapped-footprint façades, instanced frames/ledges, miniature people, transport and illustrative greenery.
+- Register three connected apartment towers against the reviewed compound footprint. Keep inferred heights, unmatched façades and fictional activity explicit.
+- Preserve actor IDs, road paths, paused selections, keyboard controls, source information and sprite fallbacks. Compact the street dock and add direct scene entry and closer bounded zoom.
+- Add asset integrity and release-budget checks to GitHub Pages CI; exclude production source and PNG proofs from served assets.
+
 ## Street expansion and GitHub Pages — 2026-10-11
 
 - Add Panmunjom JSA and Kim Il Sung Square, bringing the pilot to three regions and eight places. Record dated photographs, source rights, geometry, and equipment-identification limits.

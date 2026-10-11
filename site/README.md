@@ -23,6 +23,7 @@ node scripts/check-content.mjs
 node scripts/check-residents.mjs
 node scripts/check-street-simulation.mjs
 node scripts/check-street-entities.mjs
+node scripts/check-diorama.mjs
 npm run build
 ```
 
@@ -78,3 +79,7 @@ npm run preview:pages
 The static app serves at `/north/` by default. `PAGES_BASE_PATH` overrides that base; the Actions workflow reads it from GitHub's Pages configuration, including custom domains. This target uses the same explorer components, content, and evidence as Sites, without the runtime map-key endpoint. NASA / OSM and prepared thoughts need no server. A separately supplied `VITE_MAPTILER_KEY` would be a public build-time browser key.
 
 The Pages site is public. Existing Sites access remains owner-private. See [deployment](docs/deployment.md) for the build/publish boundary and troubleshooting.
+
+## Miniature asset production
+
+The three civilian Pyongyang places use a lazy-loaded Three.js layer with Blender GLBs, mapped-footprint façades, shared map depth and fallback sprites. See [production, evidence boundaries and release budgets](docs/diorama-assets.md) and the reproducible sources in `art/pyongyang/`.

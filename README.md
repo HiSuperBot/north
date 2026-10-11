@@ -35,6 +35,7 @@ node scripts/check-content.mjs
 node scripts/check-residents.mjs
 node scripts/check-street-simulation.mjs
 node scripts/check-street-entities.mjs
+node scripts/check-diorama.mjs
 npm run build
 ```
 
@@ -86,3 +87,5 @@ GitHub Pages uses the standalone static build and `.github/workflows/pages.yml`.
 The pilot is available to authorized viewers at [NORTH · north-evidence-explorer.glassypike.chatgpt.site](https://north-evidence-explorer.glassypike.chatgpt.site). Its current audience is owner-private. A local build or Git commit does not itself update the hosted version.
 
 Third-party photographs, map data, and libraries retain their own licenses. Consult the [evidence policy](site/docs/evidence-policy.md) and [asset rights manifest](site/content/asset-rights.json) before reusing them. This repository does not currently declare a blanket license for all project code and assets.
+
+The Pyongyang civilian pilot uses Blender-built 3D miniatures. See [asset production and release budgets](site/docs/diorama-assets.md).

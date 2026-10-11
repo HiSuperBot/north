@@ -40,7 +40,7 @@ Year selection changes the scenario state and prepared thought variant. It does 
 
 - Without a MapTiler key, NASA Blue Marble supplies a coarse country overview and contemporary OSM raster tiles supply regional reference.
 - Street mode begins at map zoom 15. Place selection normally uses zoom 16.6, pitch 52°, and bearing −28°; zooming out reverses the mode transition.
-- Map zoom is capped at 18. When a selected place reaches sufficiently close map zoom, the next zoom-in action can open its prepared entry scene.
+- Map zoom is capped at 19. The three civilian Pyongyang pilot places use zoom 17.6 and pitch 60°; other place defaults stay unchanged. When a selected place reaches sufficiently close map zoom, the next zoom-in action can open its prepared entry scene.
 - Height tags are used when present; levels can supply an inferred height. The fallback height and rendered colors are illustrative. Footprints do not establish height, use, occupancy, or historical appearance.
 - Areas with insufficient footprint coverage retain the underlying reference map. Missing geometry is not replaced with invented buildings.
 
@@ -51,6 +51,10 @@ Movement uses segment-length interpolation with illustrative speeds of 1.05–1.
 The simulation does not model observed routes, schedules, traffic, or population density. Occluded sprites are hidden and removed from keyboard navigation. Marker clicks stop event propagation so a person or place does not also select a building behind it. Zooming back to the regional map clears street inspectors.
 
 A map failure leaves the place list available. The map container observes layout changes when a desktop building panel opens. Selected building color is a UI highlight, not a change to the source data.
+
+## Pyongyang miniature layer
+
+The pilot lazily imports `lib/diorama-layer.ts` and Three.js only for the three civilian Pyongyang streets. Genuine GLBs share the map projection/depth buffer, while instanced façade details retain actual polygon outlines. Existing actor IDs, mapped routes and DOM controls still own interaction. Model failures retain sprite controls; the layer aborts downloads and releases GPU resources on teardown. The three-cylinder composition uses the reviewed compound apartment footprint; heights remain illustrative. See [asset production and budgets](diorama-assets.md) for source rights, artistic scales, rendering limits and reproduction.
 
 ## Dated street scenarios and selection
 
