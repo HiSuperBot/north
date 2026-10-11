@@ -77,6 +77,8 @@ The project repository tracks `site/` as ordinary files, not a submodule. A sepa
 
 ## Hosting
 
+Public explorer: [NORTH on GitHub Pages](https://hisuperbot.github.io/north/). Deployment status: [Pages workflow](https://github.com/HiSuperBot/north/actions/workflows/pages.yml).
+
 GitHub Pages uses the standalone static build and `.github/workflows/pages.yml`. Pushes to `main` run checks, build with the configured Pages base path, and deploy the artifact. The Pages app has no server or model key requirement. See [deployment](site/docs/deployment.md).
 
 ## Review deployment
