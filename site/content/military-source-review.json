@@ -1,0 +1,520 @@
+{
+  "reviewed": "10 October 2026",
+  "sources": [
+    {
+      "id": "parade-photo",
+      "title": "Soldiers in the 10 October 2015 Pyongyang parade",
+      "url": "https://commons.wikimedia.org/wiki/File:0961_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22950726176).jpg",
+      "creator": "Uwe Brodrecht",
+      "captured": "10 October 2015 · 09:55 (EXIF)",
+      "published": "13 November 2015 (Flickr); 26 March 2016 (Commons upload)",
+      "region": "Pyongyang · street parade viewpoint",
+      "rights": "CC BY-SA 2.0",
+      "reuse": "asset",
+      "original": "Flickr-Uwe-22950726176",
+      "limitation": "The image directly records uniforms, soldiers and the visible street on that date. Its exact street viewpoint has not been matched to Kim Il Sung Square. The original filename incorrectly says 75th anniversary; the 2015 event was the 70th. This is a period reference, not proof of exact sprite placement.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "id": "tank-photo",
+      "title": "Armored parade vehicles · 10 October 2015",
+      "url": "https://commons.wikimedia.org/wiki/File:0969_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22353922424).jpg",
+      "creator": "Uwe Brodrecht",
+      "captured": "10 October 2015 · 10:04 (EXIF)",
+      "published": "26 March 2016 (Commons upload); first Flickr publication not verified",
+      "region": "Pyongyang · street parade viewpoint",
+      "rights": "CC BY-SA 2.0",
+      "reuse": "asset",
+      "original": "Flickr-Uwe-22353922424",
+      "limitation": "Two long gun barrels, green vehicle structures, uniformed crew and foreground spectators are visible. Tracks or wheels are obscured, and the image alone does not identify a main battle tank or model. A generic tank sprite is inferred, not a reconstruction of this exact vehicle. The exact street viewpoint is unverified.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "id": "tank-earlier-reference",
+      "title": "Earlier tank appearance reference · 2013 Victory Day",
+      "url": "https://commons.wikimedia.org/wiki/File:North_Korea_Victory_Day_122_(9465927866).jpg",
+      "creator": "Stefan Krasowski",
+      "captured": "26 July 2013 · 23:22 (camera EXIF); GPS date 27 July 2013",
+      "published": "30 May 2018 (Commons upload); first Flickr publication not verified",
+      "region": "Pyongyang · 2013 Victory Day street viewpoint",
+      "rights": "CC BY 2.0",
+      "reuse": "asset",
+      "original": "Flickr-Krasowski-9465927866",
+      "limitation": "Earlier-event appearance reference only. This is not a 2015 observation or a photograph of Kim Il Sung Square. Visible tracks, turret and long barrel establish tank-like appearance; exact model is not independently verified. Camera coordinate 125.773750, 39.022869 is outside the selected square.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "id": "jsa-photo",
+      "title": "Joint Security Area before demilitarization · 19 June 2018",
+      "url": "https://www.dvidshub.net/image/4508913/korean-war-veterans-and-families-honored",
+      "creator": "Staff Sgt. Richard Colletta · U.S. Army / 20th Public Affairs Detachment",
+      "captured": "19 June 2018 (DVIDS caption); raw EXIF 18 June 2018 20:00 without verified timezone",
+      "published": "25 June 2018 (DVIDS); 16 July 2018 (Commons upload)",
+      "region": "Panmunjom Joint Security Area · view from the south",
+      "rights": "Public domain · U.S. official-duty photo; non-endorsement notice applies",
+      "reuse": "asset",
+      "original": "DVIDS-4508913",
+      "limitation": "Blue conference buildings, Panmungak and Republic of Korea guards are directly visible. This predates the October 2018 changes and does not document an after-demilitarization deployment. The photographed ROK guards must not be described as DPRK soldiers. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+      "licenseUrl": "https://www.dvidshub.net/about/copyright"
+    },
+    {
+      "id": "jsa-guard-photo",
+      "title": "North Korean guard at the Joint Security Area · 8 December 2017",
+      "url": "https://commons.wikimedia.org/wiki/File:32167175177_North_Korean_Guard,_Joint_Security_Area_December_2017.jpg",
+      "creator": "MD111",
+      "captured": "8 December 2017 · 16:25:27 (EXIF)",
+      "published": "10 April 2019 (Commons upload); first Flickr publication not verified",
+      "region": "Panmunjom Joint Security Area · photographed guard",
+      "rights": "CC BY-SA 2.0",
+      "reuse": "asset",
+      "original": "Flickr-MD111-32167175177",
+      "limitation": "Direct period clothing and guard reference on one winter day. It does not establish staffing at every location or year. The depicted real person is not assigned a fictional thought; interactive guards are invented composites.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "id": "square-photo",
+      "title": "Kim Il Sung Square from the Grand People’s Study House · 12 October 2018",
+      "url": "https://commons.wikimedia.org/wiki/File:View_of_Kim_Il-sung_Square_from_Grand_People%27s_Study_House.jpg",
+      "creator": "Christophe95",
+      "captured": "12 October 2018 · 17:57:46 (EXIF)",
+      "published": "2 February 2021 (Commons upload)",
+      "region": "Kim Il Sung Square, Pyongyang · view from the west",
+      "rights": "CC BY-SA 4.0",
+      "reuse": "asset",
+      "original": "Christophe95-square-2018",
+      "limitation": "Direct 2018 spatial appearance reference, not a 2015 parade photo. Using it to illustrate the 2015 event setting is a cross-year inference. The source gives object coordinates 125.753640, 39.019520 and approximate camera coordinates 125.750050, 39.020140; camera and object coordinates are distinct.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "id": "jsa-demilitarization",
+      "title": "UNC verifies Joint Security Area demilitarization",
+      "url": "https://www.unc.mil/Media/News-Stories-Press-Release/Article/2061730/un-command-and-ministry-of-national-defense-verify-demilitarization-efforts-at/",
+      "creator": "United Nations Command",
+      "captured": "October 2018 verification; published 29 October",
+      "published": "29 October 2018",
+      "region": "Panmunjom Joint Security Area",
+      "rights": "Link only · report text summarized; media not reused",
+      "reuse": "link only",
+      "original": "UNC-JSA-verification-20181029",
+      "limitation": "Documents weapons removal, a limit of 35 security personnel on each side and sealed guard posts after joint verification. It does not fix the precise positions or routines of generated guards. Changes apply to the JSA, not the entire DMZ."
+    },
+    {
+      "id": "parade-event-record",
+      "title": "Contemporaneous report of the 10 October 2015 parade",
+      "url": "https://www.voanews.com/a/north-korea-preps-for-major-military-parade/2998202.html",
+      "creator": "Brian Padden · Voice of America",
+      "captured": "10 October 2015 event; reported television footage",
+      "published": "9 October 2015; updated 10 October 2015",
+      "region": "Kim Il Sung Square, Pyongyang",
+      "rights": "Link only · no media or article text reused",
+      "reuse": "link only",
+      "original": "VOA-Padden-parade-20151010",
+      "limitation": "Original reporter coverage describes the square, marching soldiers and tanks in the event. This is a report based on televised coverage, not a measured inventory, exact route or independently identified vehicle model."
+    },
+    {
+      "id": "military-osm",
+      "title": "Mapped Panmunjom and Kim Il Sung Square footprints",
+      "url": "https://www.openstreetmap.org/copyright",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping downloaded 10 October 2026",
+      "published": "Individual feature timestamps and histories vary",
+      "region": "Panmunjom JSA and central Pyongyang",
+      "rights": "ODbL 1.0 · downloadable derived dataset",
+      "reuse": "data",
+      "original": "OSM-military-extract-20261010",
+      "limitation": "Current horizontal mapping and community tags are not observed 2015–2019 geography. The map does not establish guard positions, public access, historical use or annual changes. Unknown heights are illustrative.",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/"
+    },
+    {
+      "id": "panmungak-map",
+      "title": "Panmungak mapped footprint",
+      "url": "https://www.openstreetmap.org/way/348722806",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping downloaded 10 October 2026",
+      "published": "See way history",
+      "region": "Panmunjom JSA",
+      "rights": "ODbL 1.0",
+      "reuse": "data",
+      "original": "OSM-way-348722806",
+      "limitation": "Contemporary map record and name; not proof of 2015–2019 appearance, occupancy or staffing. Shape-to-photo matching is editorial identification.",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/"
+    },
+    {
+      "id": "conference-map",
+      "title": "UNCMAC conference building T2 mapped footprint",
+      "url": "https://www.openstreetmap.org/way/91432690",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping downloaded 10 October 2026",
+      "published": "See way history",
+      "region": "Panmunjom JSA",
+      "rights": "ODbL 1.0",
+      "reuse": "data",
+      "original": "OSM-way-91432690",
+      "limitation": "Contemporary map record and name; not proof of 2015–2019 appearance, occupancy or staffing. Shape-to-photo matching is editorial identification.",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/"
+    },
+    {
+      "id": "conference-t3-map",
+      "title": "JDO staff conference building T3 mapped footprint",
+      "url": "https://www.openstreetmap.org/way/91432673",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping downloaded 10 October 2026",
+      "published": "See way history",
+      "region": "Panmunjom JSA",
+      "rights": "ODbL 1.0",
+      "reuse": "data",
+      "original": "OSM-way-91432673",
+      "limitation": "Contemporary map record and name; not proof of 2015–2019 appearance, occupancy or staffing. Shape-to-photo matching is editorial identification.",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/"
+    },
+    {
+      "id": "jsa-mdl-map",
+      "title": "Military Demarcation Line mapped alignment",
+      "url": "https://www.openstreetmap.org/way/194565148",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping downloaded 10 October 2026",
+      "published": "See way history",
+      "region": "Panmunjom JSA",
+      "rights": "ODbL 1.0",
+      "reuse": "data",
+      "original": "OSM-way-194565148",
+      "limitation": "Contemporary map record and name; not proof of 2015–2019 appearance, occupancy or staffing. Shape-to-photo matching is editorial identification.",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/"
+    },
+    {
+      "id": "square-map",
+      "title": "Kim Il Sung Square mapped area",
+      "url": "https://www.openstreetmap.org/way/473827539",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping downloaded 10 October 2026",
+      "published": "See way history",
+      "region": "Pyongyang",
+      "rights": "ODbL 1.0",
+      "reuse": "data",
+      "original": "OSM-way-473827539",
+      "limitation": "Contemporary map record and name; not proof of 2015–2019 appearance, occupancy or staffing. Shape-to-photo matching is editorial identification.",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/"
+    },
+    {
+      "id": "reviewing-stand-map",
+      "title": "Parade reviewing stand mapped footprint",
+      "url": "https://www.openstreetmap.org/way/119268977",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping downloaded 10 October 2026",
+      "published": "See way history",
+      "region": "Pyongyang",
+      "rights": "ODbL 1.0",
+      "reuse": "data",
+      "original": "OSM-way-119268977",
+      "limitation": "Contemporary map record and name; not proof of 2015–2019 appearance, occupancy or staffing. Shape-to-photo matching is editorial identification.",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/"
+    }
+  ],
+  "photographs": [
+    {
+      "asset": "/scenes/military-parade.webp",
+      "sourceId": "parade-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/d6/0961_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_%2822950726176%29.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:0961_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22950726176).jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:0961_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22950726176).jpg",
+      "creator": "Uwe Brodrecht",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "10 October 2015 · 09:55 (EXIF)",
+        "published": "13 November 2015 (Flickr); 26 March 2016 (Commons upload)",
+        "locationNotes": "The image directly records uniforms, soldiers and the visible street on that date. Its exact street viewpoint has not been matched to Kim Il Sung Square. The original filename incorrectly says 75th anniversary; the 2015 event was the 70th. This is a period reference, not proof of exact sprite placement."
+      },
+      "reviewed": "10 October 2026"
+    },
+    {
+      "asset": "/scenes/parade-tank-photo.webp",
+      "sourceId": "tank-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/2/2d/0969_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_%2822353922424%29.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:0969_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22353922424).jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:0969_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22353922424).jpg",
+      "creator": "Uwe Brodrecht",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "10 October 2015 · 10:04 (EXIF)",
+        "published": "26 March 2016 (Commons upload); first Flickr publication not verified",
+        "locationNotes": "Two long gun barrels, green vehicle structures, uniformed crew and foreground spectators are visible. Tracks or wheels are obscured, and the image alone does not identify a main battle tank or model. A generic tank sprite is inferred, not a reconstruction of this exact vehicle. The exact street viewpoint is unverified."
+      },
+      "reviewed": "10 October 2026"
+    },
+    {
+      "asset": "/scenes/tank-earlier-reference.webp",
+      "sourceId": "tank-earlier-reference",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/5/53/North_Korea_Victory_Day_122_%289465927866%29.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:North_Korea_Victory_Day_122_(9465927866).jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:North_Korea_Victory_Day_122_(9465927866).jpg",
+      "creator": "Stefan Krasowski",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "26 July 2013 · 23:22 (camera EXIF); GPS date 27 July 2013",
+        "published": "30 May 2018 (Commons upload); first Flickr publication not verified",
+        "locationNotes": "Earlier-event appearance reference only. This is not a 2015 observation or a photograph of Kim Il Sung Square. Visible tracks, turret and long barrel establish tank-like appearance; exact model is not independently verified. Camera coordinate 125.773750, 39.022869 is outside the selected square."
+      },
+      "reviewed": "10 October 2026"
+    },
+    {
+      "asset": "/scenes/panmunjom.webp",
+      "sourceId": "jsa-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/fb/ROK_soldiers_at_the_Joint_Security_Area_-_180619-A-XN199-094_%2843026656501%29.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:ROK_soldiers_at_the_Joint_Security_Area_-_180619-A-XN199-094_(43026656501).jpg",
+      "primaryPage": "https://www.dvidshub.net/image/4508913/korean-war-veterans-and-families-honored",
+      "creator": "Staff Sgt. Richard Colletta · U.S. Army / 20th Public Affairs Detachment",
+      "license": "Public domain · U.S. official-duty photo; non-endorsement notice applies",
+      "licenseUrl": "https://www.dvidshub.net/about/copyright",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "19 June 2018 (DVIDS caption); raw EXIF 18 June 2018 20:00 without verified timezone",
+        "published": "25 June 2018 (DVIDS); 16 July 2018 (Commons upload)",
+        "locationNotes": "Blue conference buildings, Panmungak and Republic of Korea guards are directly visible. This predates the October 2018 changes and does not document an after-demilitarization deployment. The photographed ROK guards must not be described as DPRK soldiers. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+      },
+      "reviewed": "10 October 2026",
+      "requiredNotice": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+    },
+    {
+      "asset": "/scenes/panmunjom-guard.webp",
+      "sourceId": "jsa-guard-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/9/96/32167175177_North_Korean_Guard%2C_Joint_Security_Area_December_2017.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:32167175177_North_Korean_Guard,_Joint_Security_Area_December_2017.jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:32167175177_North_Korean_Guard,_Joint_Security_Area_December_2017.jpg",
+      "creator": "MD111",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "8 December 2017 · 16:25:27 (EXIF)",
+        "published": "10 April 2019 (Commons upload); first Flickr publication not verified",
+        "locationNotes": "Direct period clothing and guard reference on one winter day. It does not establish staffing at every location or year. The depicted real person is not assigned a fictional thought; interactive guards are invented composites."
+      },
+      "reviewed": "10 October 2026"
+    },
+    {
+      "asset": "/scenes/kim-il-sung-square.webp",
+      "sourceId": "square-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Kim_Il-sung_Square_from_Grand_People%27s_Study_House.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_Kim_Il-sung_Square_from_Grand_People%27s_Study_House.jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:View_of_Kim_Il-sung_Square_from_Grand_People%27s_Study_House.jpg",
+      "creator": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "12 October 2018 · 17:57:46 (EXIF)",
+        "published": "2 February 2021 (Commons upload)",
+        "locationNotes": "Direct 2018 spatial appearance reference, not a 2015 parade photo. Using it to illustrate the 2015 event setting is a cross-year inference. The source gives object coordinates 125.753640, 39.019520 and approximate camera coordinates 125.750050, 39.020140; camera and object coordinates are distinct."
+      },
+      "reviewed": "10 October 2026"
+    }
+  ],
+  "places": {
+    "panmunjom": {
+      "coordinates": [
+        126.6769458,
+        37.9558963
+      ],
+      "name": "Panmunjom JSA",
+      "sourceIds": [
+        "conference-map",
+        "panmungak-map",
+        "jsa-photo",
+        "jsa-demilitarization"
+      ],
+      "buildingMatches": [
+        {
+          "id": "348722806",
+          "name": "Panmungak",
+          "coordinates": [
+            126.6774893,
+            37.9562418
+          ]
+        },
+        {
+          "id": "91432690",
+          "name": "UNCMAC Conference Building · T2",
+          "coordinates": [
+            126.6769458,
+            37.9558963
+          ]
+        },
+        {
+          "id": "91432673",
+          "name": "JDO Staff Conference Building · T3",
+          "coordinates": [
+            126.6770777,
+            37.955851
+          ]
+        },
+        {
+          "id": "91432678",
+          "name": "NNSC conference building",
+          "coordinates": [
+            126.6768891,
+            37.9560133
+          ]
+        }
+      ],
+      "militaryDemarcationLine": {
+        "featureId": "194565148",
+        "sourceId": "jsa-mdl-map",
+        "coordinates": [
+          [
+            126.6758179,
+            37.9569162
+          ],
+          [
+            126.6764169,
+            37.956242
+          ],
+          [
+            126.6765161,
+            37.9561906
+          ],
+          [
+            126.6765523,
+            37.9561718
+          ],
+          [
+            126.6766483,
+            37.9561221
+          ],
+          [
+            126.6766891,
+            37.9561009
+          ],
+          [
+            126.6767889,
+            37.9560492
+          ],
+          [
+            126.6768224,
+            37.9560215
+          ],
+          [
+            126.6768936,
+            37.9559628
+          ],
+          [
+            126.6769183,
+            37.9559424
+          ],
+          [
+            126.6769968,
+            37.9558776
+          ],
+          [
+            126.6770072,
+            37.955869
+          ],
+          [
+            126.6770166,
+            37.9558612
+          ],
+          [
+            126.6770889,
+            37.9558015
+          ],
+          [
+            126.6771082,
+            37.9557856
+          ],
+          [
+            126.6771887,
+            37.9557192
+          ],
+          [
+            126.6772562,
+            37.9556874
+          ],
+          [
+            126.6772938,
+            37.9556437
+          ]
+        ],
+        "limitation": "Contemporary mapped local alignment; not a surveyed legal boundary. It is separate from roads and must never be used as a pedestrian route."
+      }
+    },
+    "square": {
+      "coordinates": [
+        125.75276,
+        39.01968
+      ],
+      "name": "Kim Il Sung Square",
+      "sourceIds": [
+        "square-map",
+        "square-photo",
+        "parade-event-record"
+      ],
+      "buildingMatches": [
+        {
+          "id": "119268977",
+          "name": "Parade Reviewing Stand",
+          "coordinates": [
+            125.75112,
+            39.0199
+          ]
+        },
+        {
+          "id": "594224301",
+          "name": "Grand People’s Study House",
+          "coordinates": [
+            125.74925,
+            39.02028
+          ]
+        }
+      ],
+      "paradeDate": "10 October 2015",
+      "candidateRoadIds": [
+        "283585382",
+        "283585385",
+        "285030767",
+        "285030753"
+      ],
+      "limitation": "Uwe Brodrecht’s parade photographs document the same day in Pyongyang but their exact street viewpoint remains unverified. The 2018 square photograph is a separately dated spatial reference."
+    }
+  },
+  "geometry": {
+    "file": "/military-neighborhoods.geojson",
+    "retrieved": "10 October 2026",
+    "sources": [
+      "https://overpass-api.de/api/interpreter",
+      "https://api.openstreetmap.org/api/0.6/map?bbox=125.749,39.017,125.755,39.022"
+    ],
+    "license": "ODbL 1.0",
+    "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "counts": {
+      "panmunjom:road": 49,
+      "panmunjom:building": 26,
+      "square:road": 65,
+      "square:building": 71
+    },
+    "features": 211,
+    "excluded": [
+      {
+        "id": "53302941",
+        "reason": "Not a surface railway"
+      },
+      {
+        "id": "1007190398",
+        "reason": "Not a surface railway"
+      }
+    ],
+    "limitations": "Contemporary 2026 mapping. Geometry and tags are not verified 2015–2019 observations. Heights derived from levels assume 3 m per level; other missing or zero heights use 15 m for display."
+  },
+  "visualReview": {
+    "tank-photo": "Two long gun barrels and green vehicle structures are visible. The foreground hides the chassis, tracks and wheels. The model and exact class are unverified; do not call this image a main battle tank.",
+    "tank-earlier-reference": "Tank-like tracked vehicle with turret and long barrel is visible in a different 2013 event. Specific model unverified.",
+    "jsa-photo": "Foreground photographed soldiers are ROK, not DPRK. Photograph is before October 2018 demilitarization.",
+    "jsa-guard-photo": "Winter 2017 DPRK guard clothing context. Real photographed person must not be associated with fictional thoughts.",
+    "parade-photo": "Soldiers and uniforms directly observed in October 2015. No measured route or exact square viewpoint established."
+  },
+  "pendingReview": []
+}

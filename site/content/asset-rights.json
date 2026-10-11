@@ -69,6 +69,109 @@
         "published": "2018-11-11T10:22:10Z",
         "locationNotes": "See scene and source records for object versus camera coordinates and regional proxies."
       }
+    },
+    {
+      "asset": "/scenes/military-parade.webp",
+      "sourceId": "parade-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/d/d6/0961_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_%2822950726176%29.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:0961_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22950726176).jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:0961_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22950726176).jpg",
+      "creator": "Uwe Brodrecht",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "10 October 2015 · 09:55 (EXIF)",
+        "published": "13 November 2015 (Flickr); 26 March 2016 (Commons upload)",
+        "locationNotes": "The image directly records uniforms, soldiers and the visible street on that date. Its exact street viewpoint has not been matched to Kim Il Sung Square. The original filename incorrectly says 75th anniversary; the 2015 event was the 70th. This is a period reference, not proof of exact sprite placement."
+      },
+      "reviewed": "10 October 2026"
+    },
+    {
+      "asset": "/scenes/parade-tank-photo.webp",
+      "sourceId": "tank-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/2/2d/0969_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_%2822353922424%29.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:0969_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22353922424).jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:0969_-_Nordkorea_2015_-_Pj%C3%B6ngjang_-_Parade_zum_75._JT_der_Arbeiterpartei_(22353922424).jpg",
+      "creator": "Uwe Brodrecht",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "10 October 2015 · 10:04 (EXIF)",
+        "published": "26 March 2016 (Commons upload); first Flickr publication not verified",
+        "locationNotes": "Two long gun barrels, green vehicle structures, uniformed crew and foreground spectators are visible. Tracks or wheels are obscured, and the image alone does not identify a main battle tank or model. A generic tank sprite is inferred, not a reconstruction of this exact vehicle. The exact street viewpoint is unverified."
+      },
+      "reviewed": "10 October 2026"
+    },
+    {
+      "asset": "/scenes/tank-earlier-reference.webp",
+      "sourceId": "tank-earlier-reference",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/5/53/North_Korea_Victory_Day_122_%289465927866%29.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:North_Korea_Victory_Day_122_(9465927866).jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:North_Korea_Victory_Day_122_(9465927866).jpg",
+      "creator": "Stefan Krasowski",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "26 July 2013 · 23:22 (camera EXIF); GPS date 27 July 2013",
+        "published": "30 May 2018 (Commons upload); first Flickr publication not verified",
+        "locationNotes": "Earlier-event appearance reference only. This is not a 2015 observation or a photograph of Kim Il Sung Square. Visible tracks, turret and long barrel establish tank-like appearance; exact model is not independently verified. Camera coordinate 125.773750, 39.022869 is outside the selected square."
+      },
+      "reviewed": "10 October 2026"
+    },
+    {
+      "asset": "/scenes/panmunjom.webp",
+      "sourceId": "jsa-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/fb/ROK_soldiers_at_the_Joint_Security_Area_-_180619-A-XN199-094_%2843026656501%29.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:ROK_soldiers_at_the_Joint_Security_Area_-_180619-A-XN199-094_(43026656501).jpg",
+      "primaryPage": "https://www.dvidshub.net/image/4508913/korean-war-veterans-and-families-honored",
+      "creator": "Staff Sgt. Richard Colletta · U.S. Army / 20th Public Affairs Detachment",
+      "license": "Public domain · U.S. official-duty photo; non-endorsement notice applies",
+      "licenseUrl": "https://www.dvidshub.net/about/copyright",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "19 June 2018 (DVIDS caption); raw EXIF 18 June 2018 20:00 without verified timezone",
+        "published": "25 June 2018 (DVIDS); 16 July 2018 (Commons upload)",
+        "locationNotes": "Blue conference buildings, Panmungak and Republic of Korea guards are directly visible. This predates the October 2018 changes and does not document an after-demilitarization deployment. The photographed ROK guards must not be described as DPRK soldiers. The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+      },
+      "reviewed": "10 October 2026",
+      "requiredNotice": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+    },
+    {
+      "asset": "/scenes/panmunjom-guard.webp",
+      "sourceId": "jsa-guard-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/9/96/32167175177_North_Korean_Guard%2C_Joint_Security_Area_December_2017.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:32167175177_North_Korean_Guard,_Joint_Security_Area_December_2017.jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:32167175177_North_Korean_Guard,_Joint_Security_Area_December_2017.jpg",
+      "creator": "MD111",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "8 December 2017 · 16:25:27 (EXIF)",
+        "published": "10 April 2019 (Commons upload); first Flickr publication not verified",
+        "locationNotes": "Direct period clothing and guard reference on one winter day. It does not establish staffing at every location or year. The depicted real person is not assigned a fictional thought; interactive guards are invented composites."
+      },
+      "reviewed": "10 October 2026"
+    },
+    {
+      "asset": "/scenes/kim-il-sung-square.webp",
+      "sourceId": "square-photo",
+      "originalFile": "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Kim_Il-sung_Square_from_Grand_People%27s_Study_House.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_Kim_Il-sung_Square_from_Grand_People%27s_Study_House.jpg",
+      "primaryPage": "https://commons.wikimedia.org/wiki/File:View_of_Kim_Il-sung_Square_from_Grand_People%27s_Study_House.jpg",
+      "creator": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Downscaled to at most 3000 pixels on the longest side and converted to WebP. Interactive image cropping is a display transformation. No subject content was added or removed.",
+      "metadata": {
+        "captureDate": "12 October 2018 · 17:57:46 (EXIF)",
+        "published": "2 February 2021 (Commons upload)",
+        "locationNotes": "Direct 2018 spatial appearance reference, not a 2015 parade photo. Using it to illustrate the 2015 event setting is a cross-year inference. The source gives object coordinates 125.753640, 39.019520 and approximate camera coordinates 125.750050, 39.020140; camera and object coordinates are distinct."
+      },
+      "reviewed": "10 October 2026"
     }
   ],
   "mapWorker": {

@@ -1,4 +1,5 @@
 "use client";
+import { assetUrl } from '@/lib/hosting';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Sparkles, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -16,9 +17,9 @@ export default function PersonPanel({person,onClose,onEvidence}:{person:Resident
  };
  const supported=availability!=='checking'&&availability!=='unavailable';
  return <aside className="inspector person-inspector" aria-label="Person information"><button className="inspector-close" onClick={onClose} aria-label="Close information"><X size={18}/></button>
- <span className="eyebrow">IMAGINED RESIDENT · {person.year}</span><div className="person-heading"><img src="/scenes/pedestrian.png" alt=""/><div><h2>{person.role}</h2><p>{person.activity}</p></div></div><div className="person-situation"><span>{person.location}</span><small>Selected person · paused while you look</small></div><div className="thought-bubble" aria-live="polite">“{thought}”</div>
+ <span className="eyebrow">IMAGINED PERSON · {person.year}</span><div className="person-heading"><img src={assetUrl(person.sprite||"/scenes/pedestrian.png")} alt=""/><div><h2>{person.role}</h2><p>{person.activity}</p></div></div><div className="person-situation"><span>{person.location}</span><small>Selected person · paused while you look</small></div><div className="thought-bubble" aria-live="polite">“{thought}”</div>
  <div className="thought-origin"><span className="evidence-tag level-ai-reconstruction">AI Reconstruction</span><small>{generated?'Gemini Nano · on device':'Prepared scenario'}</small></div>
- <p className="inspector-note">An imagined thought, not a real person’s testimony. The selected year frames the scenario; no specific historical event or resident is claimed.</p>
+ <p className="inspector-note">An imagined thought, not a real person’s testimony. The scenario supplies the period and situation; this individual’s experience is fictional.</p>
  {supported&&<div className="nano-controls"><Button variant="outline" onClick={()=>void generate()} disabled={busy}><Sparkles size={15}/>{busy?'Preparing…':availability==='available'?'Imagine another thought':'Enable on-device thoughts'}</Button>{busy&&<Button variant="ghost" onClick={()=>request.current?.abort()}>Cancel</Button>}<small>{availability==='available'?'Runs locally in this browser.':'Chrome may download a large model on first use.'}</small></div>}
  {availability==='unavailable'&&<p className="nano-unavailable">On-device thoughts are unavailable in this browser. Showing a prepared scenario.</p>}
  {status&&<p className="nano-status" role="status">{status}</p>}

@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-10-10",
+  "project": "NORTH",
+  "method": "Built-in image_gen.imagegen; one independent generation per sprite, transparent_background=true.",
+  "reference_images": [],
+  "reference_policy": "No image reference inputs were supplied. These are fictional illustrative miniatures; generated geometry, uniforms and vehicles are not observations or verified identifications.",
+  "review_status": "All nine assets visually inspected and alpha verified. Accepted as illustrative miniature assets.",
+  "historical_limits": [
+    "Sprites illustrate roles and activities, not identified real residents or units.",
+    "No tank, bus, truck or locomotive model identification is asserted.",
+    "The renderer must retain AI Reconstruction labeling and keep historical scenario evidence separate from sprite manufacture."
+  ],
+  "optimization": "Non-generative crop around alpha > 16 silhouette bounds plus 24 source pixels; proportional Lanczos downsampling to a 256px content long edge; 8px fully transparent outer margin. Alpha within the retained crop is preserved through resampling.",
+  "assets": [
+    {
+      "id": "soldier-armed",
+      "output_file": "public/sprites/soldier-armed.png",
+      "source_file": "/Users/kwang/.codex/generated_images/01a12489-7b2c-75c0-a51d-3cceb36887ed/exec-a0d37719-69de-43b5-9822-20745916bf64.png",
+      "exact_prompt": "Use case: stylized-concept.\nAsset type: a single transparent PNG sprite for NORTH, a restrained documentary map simulation set in North Korea in 2015\u20132019. This is fictional illustrative geometry, not photographic evidence.\nStyle: a beautifully crafted miniature with crisp, simplified shapes and subtle painterly material shading, compatible with a small isometric simulation game. Muted charcoal, dust, olive, faded blue, warm stone palette. Soft daylight from upper left. Camera about 38 degrees above the horizontal, three-quarter view facing lower right, suited to MapLibre pitch 52 degrees and bearing -28.\nComposition: one isolated subject, complete silhouette, centered with generous transparent margin. Ground contact at the lower center. Must remain readable at 30\u201370 CSS pixels. NO scenic backdrop, NO platform, NO base tile, NO text, NO logo, NO watermark, NO signage, NO flag, NO fake checkerboard. Genuinely transparent background and no opaque white halo. Do not draw any other objects except those described. No broad cast shadow.\nSubject: one adult guard in generic period DPRK olive drab uniform and simple peaked cap, dark boots, a small rifle carried safely slung along the back. Standing at ease with hands near waist, neutral posture. No exact unit insignia or readable markings; no threatening pose. Full body, visible feet. Make the miniature silhouette clearly distinguishable from civilian pedestrians.",
+      "reference_images": [],
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_dimensions": [
+        1024,
+        1536
+      ],
+      "final_dimensions": [
+        102,
+        272
+      ],
+      "file_bytes": 33107,
+      "optimization": {
+        "crop_box": [
+          295,
+          95,
+          744,
+          1436
+        ],
+        "crop_reference": "Alpha > 16 silhouette bounds, expanded by 24 source pixels; retained alpha is unchanged before proportional resampling.",
+        "resampling": "Pillow LANCZOS",
+        "content_max_edge": 256,
+        "transparent_margin_px": 8
+      },
+      "alpha_inspection": {
+        "mode": "RGBA",
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_pixels": 15238,
+        "partial_alpha_pixels": 11921,
+        "fully_opaque_pixels": 585,
+        "outer_8px_margin": "Fully transparent by construction"
+      },
+      "review_status": "Accepted as a fictional illustrative sprite",
+      "visual_inspection": {
+        "performed_on": "2026-10-10",
+        "method": "Human-style visual inspection of contact sheet on dark neutral map-like matte, with 30px guard and 70px other-sprite thumbnails alongside larger previews.",
+        "result": "Complete standing guard silhouette and slung rifle are visible; readable at 30px height. Generic uniform decoration is illustrative and not a verified unit identification.",
+        "background": "Genuine alpha composited cleanly without an opaque rectangular backdrop or broad white halo."
+      }
+    },
+    {
+      "id": "soldier-unarmed",
+      "output_file": "public/sprites/soldier-unarmed.png",
+      "source_file": "/Users/kwang/.codex/generated_images/01a12489-7b2c-75c0-a51d-3cceb36887ed/exec-1be11936-7c1c-4dac-9979-51cc265a5f01.png",
+      "exact_prompt": "Use case: stylized-concept.\nAsset type: a single transparent PNG sprite for NORTH, a restrained documentary map simulation set in North Korea in 2015\u20132019. This is fictional illustrative geometry, not photographic evidence.\nStyle: a beautifully crafted miniature with crisp, simplified shapes and subtle painterly material shading, compatible with a small isometric simulation game. Muted charcoal, dust, olive, faded blue, warm stone palette. Soft daylight from upper left. Camera about 38 degrees above the horizontal, three-quarter view facing lower right, suited to MapLibre pitch 52 degrees and bearing -28.\nComposition: one isolated subject, complete silhouette, centered with generous transparent margin. Ground contact at the lower center. Must remain readable at 30\u201370 CSS pixels. NO scenic backdrop, NO platform, NO base tile, NO text, NO logo, NO watermark, NO signage, NO flag, NO fake checkerboard. Genuinely transparent background and no opaque white halo. Do not draw any other objects except those described. No broad cast shadow.\nSubject: one adult guard in generic period DPRK olive drab uniform and simple peaked cap, dark boots. Standing at ease with relaxed empty hands, neutral posture. No weapon, no exact unit insignia or readable markings. Full body, visible feet. Make the miniature silhouette clearly distinguishable from civilian pedestrians.",
+      "reference_images": [],
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_dimensions": [
+        1024,
+        1536
+      ],
+      "final_dimensions": [
+        105,
+        272
+      ],
+      "file_bytes": 34678,
+      "optimization": {
+        "crop_box": [
+          281,
+          92,
+          751,
+          1441
+        ],
+        "crop_reference": "Alpha > 16 silhouette bounds, expanded by 24 source pixels; retained alpha is unchanged before proportional resampling.",
+        "resampling": "Pillow LANCZOS",
+        "content_max_edge": 256,
+        "transparent_margin_px": 8
+      },
+      "alpha_inspection": {
+        "mode": "RGBA",
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_pixels": 14942,
+        "partial_alpha_pixels": 13044,
+        "fully_opaque_pixels": 574,
+        "outer_8px_margin": "Fully transparent by construction"
+      },
+      "review_status": "Accepted as a fictional illustrative sprite",
+      "visual_inspection": {
+        "performed_on": "2026-10-10",
+        "method": "Human-style visual inspection of contact sheet on dark neutral map-like matte, with 30px guard and 70px other-sprite thumbnails alongside larger previews.",
+        "result": "Complete unarmed standing guard silhouette; readable at 30px height. Generic uniform decoration is illustrative and not a verified unit identification.",
+        "background": "Genuine alpha composited cleanly without an opaque rectangular backdrop or broad white halo."
+      }
+    },
+    {
+      "id": "tank",
+      "output_file": "public/sprites/tank.png",
+      "source_file": "/Users/kwang/.codex/generated_images/01a12489-7b2c-75c0-a51d-3cceb36887ed/exec-baa60ac2-7dee-4a97-8a3e-6e3eb50d2a8b.png",
+      "exact_prompt": "Use case: scientific-educational.\nAsset type: one isolated transparent sprite for a historical museum map interface.\nCreate one small stylized isometric museum miniature of a generic tracked tank used as a static parade display, olive drab, simple rounded turret, slender barrel, broad tracks. An educational scale-model illustration, simplified clean geometry and painted material shading. Three-quarter view from 38 degrees above ground, facing lower right. Plain generic silhouette, not an identified real equipment model. No scene or backdrop, no platform, no people, no flags, no text, no unit markings, no firing, no ammunition, no battlefield. Show complete outline, centered with generous transparent margins, readable at 60 CSS pixels. Genuinely transparent PNG background. Neutral soft daylight, muted documentary palette.",
+      "reference_images": [],
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "final_dimensions": [
+        272,
+        170
+      ],
+      "file_bytes": 58344,
+      "optimization": {
+        "crop_box": [
+          30,
+          77,
+          1480,
+          952
+        ],
+        "crop_reference": "Alpha > 16 silhouette bounds, expanded by 24 source pixels; retained alpha is unchanged before proportional resampling.",
+        "resampling": "Pillow LANCZOS",
+        "content_max_edge": 256,
+        "transparent_margin_px": 8
+      },
+      "alpha_inspection": {
+        "mode": "RGBA",
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_pixels": 24261,
+        "partial_alpha_pixels": 21448,
+        "fully_opaque_pixels": 531,
+        "outer_8px_margin": "Fully transparent by construction"
+      },
+      "review_status": "Accepted as a fictional illustrative sprite",
+      "visual_inspection": {
+        "performed_on": "2026-10-10",
+        "method": "Human-style visual inspection of contact sheet on dark neutral map-like matte, with 30px guard and 70px other-sprite thumbnails alongside larger previews.",
+        "result": "Complete track/turret/barrel silhouette remains readable at 70px. Accepted only as a generic educational scale model, not an equipment identification.",
+        "background": "Genuine alpha composited cleanly without an opaque rectangular backdrop or broad white halo."
+      }
+    },
+    {
+      "id": "bus",
+      "output_file": "public/sprites/bus.png",
+      "source_file": "/Users/kwang/.codex/generated_images/01a12489-7b2c-75c0-a51d-3cceb36887ed/exec-fcd338b1-3b47-463a-8fec-e0ffafe55690.png",
+      "exact_prompt": "Use case: stylized-concept.\nAsset type: a single transparent PNG sprite for NORTH, a restrained documentary map simulation set in North Korea in 2015\u20132019. This is fictional illustrative geometry, not photographic evidence.\nStyle: a beautifully crafted miniature with crisp, simplified shapes and subtle painterly material shading, compatible with a small isometric simulation game. Muted charcoal, dust, olive, faded blue, warm stone palette. Soft daylight from upper left. Camera about 38 degrees above the horizontal, three-quarter view facing lower right, suited to MapLibre pitch 52 degrees and bearing -28.\nComposition: one isolated subject, complete silhouette, centered with generous transparent margin. Ground contact at the lower center. Must remain readable at 30\u201370 CSS pixels. NO scenic backdrop, NO platform, NO base tile, NO text, NO logo, NO watermark, NO signage, NO flag, NO fake checkerboard. Genuinely transparent background and no opaque white halo. Do not draw any other objects except those described. No broad cast shadow.\nSubject: one modest 1980s\u20131990s style city bus still operating in the 2015\u20132019 period, faded light blue and cream body, dark rectangular windows, four wheels, boxy short body. Three-quarter front side view facing lower right. No logo, no route text, no pedestrians, no road, no scenery. Clearly a stylized miniature bus, compact silhouette and clean edges.",
+      "reference_images": [],
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "final_dimensions": [
+        272,
+        193
+      ],
+      "file_bytes": 70880,
+      "optimization": {
+        "crop_box": [
+          87,
+          59,
+          1464,
+          1013
+        ],
+        "crop_reference": "Alpha > 16 silhouette bounds, expanded by 24 source pixels; retained alpha is unchanged before proportional resampling.",
+        "resampling": "Pillow LANCZOS",
+        "content_max_edge": 256,
+        "transparent_margin_px": 8
+      },
+      "alpha_inspection": {
+        "mode": "RGBA",
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_pixels": 24198,
+        "partial_alpha_pixels": 27753,
+        "fully_opaque_pixels": 545,
+        "outer_8px_margin": "Fully transparent by construction"
+      },
+      "review_status": "Accepted as a fictional illustrative sprite",
+      "visual_inspection": {
+        "performed_on": "2026-10-10",
+        "method": "Human-style visual inspection of contact sheet on dark neutral map-like matte, with 30px guard and 70px other-sprite thumbnails alongside larger previews.",
+        "result": "Blue/cream body, windows and wheels distinguish the bus at 70px; no readable route or brand.",
+        "background": "Genuine alpha composited cleanly without an opaque rectangular backdrop or broad white halo."
+      }
+    },
+    {
+      "id": "cyclist",
+      "output_file": "public/sprites/cyclist.png",
+      "source_file": "/Users/kwang/.codex/generated_images/01a12489-7b2c-75c0-a51d-3cceb36887ed/exec-ff59d3ef-0be3-4c20-a9c6-1507227f739e.png",
+      "exact_prompt": "Use case: stylized-concept.\nAsset type: a single transparent PNG sprite for NORTH, a restrained documentary map simulation set in North Korea in 2015\u20132019. This is fictional illustrative geometry, not photographic evidence.\nStyle: a beautifully crafted miniature with crisp, simplified shapes and subtle painterly material shading, compatible with a small isometric simulation game. Muted charcoal, dust, olive, faded blue, warm stone palette. Soft daylight from upper left. Camera about 38 degrees above the horizontal, three-quarter view facing lower right, suited to MapLibre pitch 52 degrees and bearing -28.\nComposition: one isolated subject, complete silhouette, centered with generous transparent margin. Ground contact at the lower center. Must remain readable at 30\u201370 CSS pixels. NO scenic backdrop, NO platform, NO base tile, NO text, NO logo, NO watermark, NO signage, NO flag, NO fake checkerboard. Genuinely transparent background and no opaque white halo. Do not draw any other objects except those described. No broad cast shadow.\nSubject: one adult civilian in a faded blue jacket and charcoal trousers riding a simple dark utility bicycle with a rear rack. Three-quarter side view facing lower right. Full rider and both bicycle wheels entirely visible. No helmet, no bags, no extra people, no road, no platform. Use simplified miniature proportions and crisp readable silhouette at 40 CSS pixels rather than detailed portrait realism.",
+      "reference_images": [],
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_dimensions": [
+        1312,
+        1199
+      ],
+      "final_dimensions": [
+        234,
+        272
+      ],
+      "file_bytes": 76618,
+      "optimization": {
+        "crop_box": [
+          196,
+          45,
+          1151,
+          1164
+        ],
+        "crop_reference": "Alpha > 16 silhouette bounds, expanded by 24 source pixels; retained alpha is unchanged before proportional resampling.",
+        "resampling": "Pillow LANCZOS",
+        "content_max_edge": 256,
+        "transparent_margin_px": 8
+      },
+      "alpha_inspection": {
+        "mode": "RGBA",
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_pixels": 40766,
+        "partial_alpha_pixels": 21389,
+        "fully_opaque_pixels": 1493,
+        "outer_8px_margin": "Fully transparent by construction"
+      },
+      "review_status": "Accepted as a fictional illustrative sprite",
+      "visual_inspection": {
+        "performed_on": "2026-10-10",
+        "method": "Human-style visual inspection of contact sheet on dark neutral map-like matte, with 30px guard and 70px other-sprite thumbnails alongside larger previews.",
+        "result": "Rider and both wheels remain fully visible; silhouette is distinct at 70px and usable at 40\u201350px.",
+        "background": "Genuine alpha composited cleanly without an opaque rectangular backdrop or broad white halo."
+      }
+    },
+    {
+      "id": "freight-truck",
+      "output_file": "public/sprites/freight-truck.png",
+      "source_file": "/Users/kwang/.codex/generated_images/01a12489-7b2c-75c0-a51d-3cceb36887ed/exec-712342d3-413a-4f32-951b-bb5f64a3992f.png",
+      "exact_prompt": "Use case: stylized-concept.\nAsset type: a single transparent PNG sprite for NORTH, a restrained documentary map simulation set in North Korea in 2015\u20132019. This is fictional illustrative geometry, not photographic evidence.\nStyle: a beautifully crafted miniature with crisp, simplified shapes and subtle painterly material shading, compatible with a small isometric simulation game. Muted charcoal, dust, olive, faded blue, warm stone palette. Soft daylight from upper left. Camera about 38 degrees above the horizontal, three-quarter view facing lower right, suited to MapLibre pitch 52 degrees and bearing -28.\nComposition: one isolated subject, complete silhouette, centered with generous transparent margin. Ground contact at the lower center. Must remain readable at 30\u201370 CSS pixels. NO scenic backdrop, NO platform, NO base tile, NO text, NO logo, NO watermark, NO signage, NO flag, NO fake checkerboard. Genuinely transparent background and no opaque white halo. Do not draw any other objects except those described. No broad cast shadow.\nSubject: one modest period industrial freight truck, olive gray boxy cab, weathered flatbed with a small tightly stacked load of brown crates, six dark wheels. Three-quarter front side view facing lower right. No logo, no readable markings, no driver portrait, no road, no scenery, no military symbols. Simple bold miniature silhouette readable at 50 CSS pixels.",
+      "reference_images": [],
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "final_dimensions": [
+        272,
+        180
+      ],
+      "file_bytes": 67668,
+      "optimization": {
+        "crop_box": [
+          116,
+          110,
+          1404,
+          936
+        ],
+        "crop_reference": "Alpha > 16 silhouette bounds, expanded by 24 source pixels; retained alpha is unchanged before proportional resampling.",
+        "resampling": "Pillow LANCZOS",
+        "content_max_edge": 256,
+        "transparent_margin_px": 8
+      },
+      "alpha_inspection": {
+        "mode": "RGBA",
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_pixels": 24217,
+        "partial_alpha_pixels": 24193,
+        "fully_opaque_pixels": 550,
+        "outer_8px_margin": "Fully transparent by construction"
+      },
+      "review_status": "Accepted as a fictional illustrative sprite",
+      "visual_inspection": {
+        "performed_on": "2026-10-10",
+        "method": "Human-style visual inspection of contact sheet on dark neutral map-like matte, with 30px guard and 70px other-sprite thumbnails alongside larger previews.",
+        "result": "Cab, crate load and wheels remain distinguishable at 70px; no identified model.",
+        "background": "Genuine alpha composited cleanly without an opaque rectangular backdrop or broad white halo."
+      }
+    },
+    {
+      "id": "freight-train",
+      "output_file": "public/sprites/freight-train.png",
+      "source_file": "/Users/kwang/.codex/generated_images/01a12489-7b2c-75c0-a51d-3cceb36887ed/exec-e76d1460-760a-4d60-bb7d-9aab364ffa8c.png",
+      "exact_prompt": "Use case: stylized-concept.\nAsset type: a single transparent PNG sprite for NORTH, a restrained documentary map simulation set in North Korea in 2015\u20132019. This is fictional illustrative geometry, not photographic evidence.\nStyle: a beautifully crafted miniature with crisp, simplified shapes and subtle painterly material shading, compatible with a small isometric simulation game. Muted charcoal, dust, olive, faded blue, warm stone palette. Soft daylight from upper left. Camera about 38 degrees above the horizontal, three-quarter view facing lower right, suited to MapLibre pitch 52 degrees and bearing -28.\nComposition: one isolated subject, complete silhouette, centered with generous transparent margin. Ground contact at the lower center. Must remain readable at 30\u201370 CSS pixels. NO scenic backdrop, NO platform, NO base tile, NO text, NO logo, NO watermark, NO signage, NO flag, NO fake checkerboard. Genuinely transparent background and no opaque white halo. Do not draw any other objects except those described. No broad cast shadow.\nSubject: one compact illustrative industrial freight train set: a boxy muted dark teal diesel locomotive pulling just one short brown freight wagon carrying dull gray mineral material. Both are physically connected, the entire locomotive and wagon visible. Three-quarter side view facing lower right along one straight diagonal, no rail track, no ground, no scenery, no smoke, no text, no logo. Clear simplified wheels and train silhouette readable at 70 CSS pixels.",
+      "reference_images": [],
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "final_dimensions": [
+        272,
+        172
+      ],
+      "file_bytes": 49610,
+      "optimization": {
+        "crop_box": [
+          77,
+          105,
+          1473,
+          953
+        ],
+        "crop_reference": "Alpha > 16 silhouette bounds, expanded by 24 source pixels; retained alpha is unchanged before proportional resampling.",
+        "resampling": "Pillow LANCZOS",
+        "content_max_edge": 256,
+        "transparent_margin_px": 8
+      },
+      "alpha_inspection": {
+        "mode": "RGBA",
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_pixels": 30202,
+        "partial_alpha_pixels": 16103,
+        "fully_opaque_pixels": 479,
+        "outer_8px_margin": "Fully transparent by construction"
+      },
+      "review_status": "Accepted as a fictional illustrative sprite",
+      "visual_inspection": {
+        "performed_on": "2026-10-10",
+        "method": "Human-style visual inspection of contact sheet on dark neutral map-like matte, with 30px guard and 70px other-sprite thumbnails alongside larger previews.",
+        "result": "Locomotive and one connected loaded wagon both visible at 70px; no track is baked into the sprite.",
+        "background": "Genuine alpha composited cleanly without an opaque rectangular backdrop or broad white halo."
+      }
+    },
+    {
+      "id": "handcart",
+      "output_file": "public/sprites/handcart.png",
+      "source_file": "/Users/kwang/.codex/generated_images/01a12489-7b2c-75c0-a51d-3cceb36887ed/exec-411b2ad8-a70c-4d23-a3cd-8209fd5ec236.png",
+      "exact_prompt": "Use case: stylized-concept.\nAsset type: a single transparent PNG sprite for NORTH, a restrained documentary map simulation set in North Korea in 2015\u20132019. This is fictional illustrative geometry, not photographic evidence.\nStyle: a beautifully crafted miniature with crisp, simplified shapes and subtle painterly material shading, compatible with a small isometric simulation game. Muted charcoal, dust, olive, faded blue, warm stone palette. Soft daylight from upper left. Camera about 38 degrees above the horizontal, three-quarter view facing lower right, suited to MapLibre pitch 52 degrees and bearing -28.\nComposition: one isolated subject, complete silhouette, centered with generous transparent margin. Ground contact at the lower center. Must remain readable at 30\u201370 CSS pixels. NO scenic backdrop, NO platform, NO base tile, NO text, NO logo, NO watermark, NO signage, NO flag, NO fake checkerboard. Genuinely transparent background and no opaque white halo. Do not draw any other objects except those described. No broad cast shadow.\nSubject: one modest utilitarian wooden handcart, two dark iron-spoked wheels and two handles, carrying a few dull brown sacks. Three-quarter front side view facing lower right. No person, no scenery, no ground, no platform, no markings. Simplified sturdy miniature silhouette readable at 40 CSS pixels.",
+      "reference_images": [],
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_dimensions": [
+        1536,
+        1024
+      ],
+      "final_dimensions": [
+        272,
+        193
+      ],
+      "file_bytes": 64721,
+      "optimization": {
+        "crop_box": [
+          220,
+          82,
+          1441,
+          926
+        ],
+        "crop_reference": "Alpha > 16 silhouette bounds, expanded by 24 source pixels; retained alpha is unchanged before proportional resampling.",
+        "resampling": "Pillow LANCZOS",
+        "content_max_edge": 256,
+        "transparent_margin_px": 8
+      },
+      "alpha_inspection": {
+        "mode": "RGBA",
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_pixels": 30377,
+        "partial_alpha_pixels": 21132,
+        "fully_opaque_pixels": 987,
+        "outer_8px_margin": "Fully transparent by construction"
+      },
+      "review_status": "Accepted as a fictional illustrative sprite",
+      "visual_inspection": {
+        "performed_on": "2026-10-10",
+        "method": "Human-style visual inspection of contact sheet on dark neutral map-like matte, with 30px guard and 70px other-sprite thumbnails alongside larger previews.",
+        "result": "Sacks, two wheels and handles are distinct at 70px; no person or scenery is baked into the sprite.",
+        "background": "Genuine alpha composited cleanly without an opaque rectangular backdrop or broad white halo."
+      }
+    },
+    {
+      "id": "vendor",
+      "output_file": "public/sprites/vendor.png",
+      "source_file": "/Users/kwang/.codex/generated_images/01a12489-7b2c-75c0-a51d-3cceb36887ed/exec-f0a72101-d83d-40d8-ad91-b00fa4109ee0.png",
+      "exact_prompt": "Use case: stylized-concept.\nAsset type: a single transparent PNG sprite for NORTH, a restrained documentary map simulation set in North Korea in 2015\u20132019. This is fictional illustrative geometry, not photographic evidence.\nStyle: a beautifully crafted miniature with crisp, simplified shapes and subtle painterly material shading, compatible with a small isometric simulation game. Muted charcoal, dust, olive, faded blue, warm stone palette. Soft daylight from upper left. Camera about 38 degrees above the horizontal, three-quarter view facing lower right, suited to MapLibre pitch 52 degrees and bearing -28.\nComposition: one isolated subject, complete silhouette, centered with generous transparent margin. Ground contact at the lower center. Must remain readable at 30\u201370 CSS pixels. NO scenic backdrop, NO platform, NO base tile, NO text, NO logo, NO watermark, NO signage, NO flag, NO fake checkerboard. Genuinely transparent background and no opaque white halo. Do not draw any other objects except those described. No broad cast shadow.\nSubject: one adult civilian vendor in a muted brown jacket and charcoal trousers standing behind a very small plain wooden goods table. Table displays just a few brown sacks, a bowl and muted produce shapes. Full vendor and table visible as a single compact miniature. Three-quarter view facing lower right. No other people, no market stalls, no roof, no backdrop, no lettering, no sign, no platform. Tiny restrained isometric simulation sprite with simplified readable shapes at 45 CSS pixels.",
+      "reference_images": [],
+      "generation_options": {
+        "transparent_background": true
+      },
+      "source_dimensions": [
+        1266,
+        1242
+      ],
+      "final_dimensions": [
+        194,
+        272
+      ],
+      "file_bytes": 62022,
+      "optimization": {
+        "crop_box": [
+          355,
+          114,
+          1075,
+          1148
+        ],
+        "crop_reference": "Alpha > 16 silhouette bounds, expanded by 24 source pixels; retained alpha is unchanged before proportional resampling.",
+        "resampling": "Pillow LANCZOS",
+        "content_max_edge": 256,
+        "transparent_margin_px": 8
+      },
+      "alpha_inspection": {
+        "mode": "RGBA",
+        "minimum": 0,
+        "maximum": 255,
+        "fully_transparent_pixels": 30505,
+        "partial_alpha_pixels": 21626,
+        "fully_opaque_pixels": 637,
+        "outer_8px_margin": "Fully transparent by construction"
+      },
+      "review_status": "Accepted as a fictional illustrative sprite",
+      "visual_inspection": {
+        "performed_on": "2026-10-10",
+        "method": "Human-style visual inspection of contact sheet on dark neutral map-like matte, with 30px guard and 70px other-sprite thumbnails alongside larger previews.",
+        "result": "One civilian vendor and a compact goods table are visible at 70px; goods and attire are fictional examples, not documented local inventory.",
+        "background": "Genuine alpha composited cleanly without an opaque rectangular backdrop or broad white halo."
+      }
+    }
+  ],
+  "discarded_attempts": [
+    {
+      "asset": "tank.png",
+      "count": 2,
+      "exact_prompt": "Use case: stylized-concept.\nAsset type: a single transparent PNG sprite for NORTH, a restrained documentary map simulation set in North Korea in 2015–2019. This is fictional illustrative geometry, not photographic evidence.\nStyle: a beautifully crafted miniature with crisp, simplified shapes and subtle painterly material shading, compatible with a small isometric simulation game. Muted charcoal, dust, olive, faded blue, warm stone palette. Soft daylight from upper left. Camera about 38 degrees above the horizontal, three-quarter view facing lower right, suited to MapLibre pitch 52 degrees and bearing -28.\nComposition: one isolated subject, complete silhouette, centered with generous transparent margin. Ground contact at the lower center. Must remain readable at 30–70 CSS pixels. NO scenic backdrop, NO platform, NO base tile, NO text, NO logo, NO watermark, NO signage, NO flag, NO fake checkerboard. Genuinely transparent background and no opaque white halo. Do not draw any other objects except those described. No broad cast shadow.\nSubject: one generic period tracked parade tank, weathered olive drab, broad steel tracks, low rounded turret and long forward barrel. Three-quarter front side view facing lower right. No smoke, no fire, no battlefield, no crew, no exact model designation, no unit insignia, no flags or readable markings. Preserve a bold legible miniature silhouette and visible tracks. It represents a generic illustrative vehicle, not a verified equipment identification.",
+      "generation_options": {"transparent_background": true},
+      "reason": "Output rejected by the image-generation safety system. No rejected output is included; the final asset used the independent educational scale-model prompt recorded above."
+    }
+  ]
+}

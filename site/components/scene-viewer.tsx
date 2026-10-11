@@ -1,4 +1,5 @@
 "use client";
+import { assetUrl } from '@/lib/hosting';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Scene } from '@/lib/content';
 interface Props {scene:Scene;command:{value:number;serial:number};onNext:(id:string)=>void;onBack:()=>void;onDetail:(label:string)=>void;}
@@ -20,7 +21,7 @@ export default function SceneViewer({scene,command,onNext,onBack,onDetail}:Props
  onPointerUp={e=>{pointers.current.delete(e.pointerId);pinch.current=0;}} onPointerCancel={e=>{pointers.current.delete(e.pointerId);pinch.current=0;}}>
  <div className="image-plane" style={{width:w,height:h,transform:`translate(-50%,-50%) translate(${pan.x}px,${pan.y}px) scale(${scale})`,opacity:loaded?1:0}}>
  {/* Original proportions are preserved; display zoom stops at available source resolution. */}
- <img src={scene.image+(retry?'?retry='+retry:'')} alt={scene.type==='AI Reconstruction'?`AI reconstruction: ${scene.title}. ${scene.description}`:scene.title} draggable={false} onLoad={e=>{const naturalWidth=e.currentTarget.naturalWidth;const naturalHeight=e.currentTarget.naturalHeight;setSize(s=>({...s,naturalWidth,naturalHeight}));setLoaded(true);setFailed(false);}} onError={()=>{setFailed(true);setLoaded(false);}}/>
+ <img src={assetUrl(scene.image)+(retry?'?retry='+retry:'')} alt={scene.type==='AI Reconstruction'?`AI reconstruction: ${scene.title}. ${scene.description}`:scene.title} draggable={false} onLoad={e=>{const naturalWidth=e.currentTarget.naturalWidth;const naturalHeight=e.currentTarget.naturalHeight;setSize(s=>({...s,naturalWidth,naturalHeight}));setLoaded(true);setFailed(false);}} onError={()=>{setFailed(true);setLoaded(false);}}/>
  {scene.hotspot&&<button className="scene-hotspot" aria-label={scene.hotspot.label} style={{left:scene.hotspot.x+'%',top:scene.hotspot.y+'%',transform:`translate(-50%,-50%) scale(${1/scale})`}} onClick={()=>onNext(scene.hotspot!.sceneId)}><span>+</span><small>{scene.hotspot.label}</small></button>}
  </div>
  {!loaded&&!failed&&<div className="scene-loading" role="status">Loading the next view…</div>}

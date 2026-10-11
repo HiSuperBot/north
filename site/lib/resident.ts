@@ -1,6 +1,7 @@
 import { regions, placeById, sceneById, scenes, sourceById } from './content';
+import { scenarioFor, type StreetEntity } from './street-content';
 import type { Exploration } from './exploration';
-export interface ResidentScenario { id:string; role:string; activity:string; thought:string; year:number; location:string; context:string; sources:{title:string;url:string;captured:string;limitation?:string}[]; }
+export interface ResidentScenario { sprite?:string; id:string; role:string; activity:string; thought:string; year:number; location:string; context:string; sources:{title:string;url:string;captured:string;limitation?:string}[]; }
 const routines:Record<string,{role:string;activity:string;thoughts:string[]}[]>={
  'kwangbok-apartment':[{role:'A neighbor',activity:'Walking home in the apartment neighborhood',thoughts:['I should start preparing supper when I get home.','I wonder if there is still time for one errand before supper.','A little rest at home would be welcome.']},{role:'A passerby',activity:'Passing the apartment buildings',thoughts:['I will take the familiar way home.','There is one more thing to do before heading home.','A short walk before the evening chores.']}],
  'pyongyang-transit':[{role:'A commuter',activity:'Walking toward an imagined stopping point',thoughts:['I hope I have not missed the next ride.','I should keep walking; I still have a way to go.','I wonder how long I will have to wait.']},{role:'A pedestrian',activity:'Walking along a mapped city road',thoughts:['I should leave myself enough time to get home.','I will stop here for a moment before going on.','The journey feels easier when I do not hurry.']}],
@@ -9,15 +10,21 @@ const routines:Record<string,{role:string;activity:string;thoughts:string[]}[]>=
  'haksong-rail':[{role:'A railway worker',activity:'On an imagined walk beside the railway',thoughts:['I should finish this small task before I leave.','I will check my things once more before going on.','A quiet moment before the next task.']},{role:'A traveler',activity:'Walking near the mapped station area',thoughts:['I should keep my belongings close while I wait.','I wonder how long the rest of the journey will take.','I will find somewhere to pause before going on.']}],
  'haksong-housing':[{role:'A neighbor',activity:'Walking through the district',thoughts:['I should get back to the chores at home.','I wonder if the meal is nearly ready.','I will stop and speak to my neighbor on the way.']},{role:'A resident',activity:'On an imagined household errand',thoughts:['One more errand, then I can rest.','I should make time to tidy up before supper.','It will be pleasant to sit down at home.']}],
 };
+routines['kim-il-sung-square']=[{role:'An imagined onlooker',activity:'Standing near the square in a fictional crowd',thoughts:['I wonder how the procession looks from here.','I should leave enough room for the people beside me.']}];
 const everyday=[{role:'A passerby',activity:'Walking along a mapped road',thoughts:['I should finish my errand before heading home.','I will take the familiar road back.','A moment to rest before going on.']}];
 export function residentScenario(state:Exploration,index:number):ResidentScenario{
  const place=placeById(state.placeId);const region=regions.find(r=>r.id===state.regionId);
- const choices=routines[place?.id||'']||(region?.id==='aoji'?routines['haksong-housing']:everyday);
+ const choices=(place?.id==='kim-il-sung-square'&&state.year!==2015?everyday:routines[place?.id||''])||(region?.id==='aoji'?routines['haksong-housing']:everyday);
  const person=choices[Math.abs(index)%choices.length];
  const periodScene=scenes.find(s=>s.placeId===place?.id&&s.type==='AI Reconstruction')||sceneById(place?.entryScene);
  const relevantClaims=periodScene?.claims.filter(c=>c.level!=='AI Reconstruction')||[];
  const sourceIds=Array.from(new Set(relevantClaims.flatMap(c=>c.sourceIds)));
  return {id:`${place?.id||region?.id||'country'}:${state.year}:${index}`,role:person.role,activity:person.activity,thought:person.thoughts[(Math.abs(index)+state.year-2015)%person.thoughts.length],year:state.year,location:place?.name||region?.name||'North Korea',context:relevantClaims.map(c=>`${c.element}: ${c.description}${c.scope?` [${c.scope}]`:''}`).join('\n'),sources:sourceIds.map(sourceById).map(s=>({title:s.title,url:s.url,captured:s.captured,limitation:s.limitation}))};
+}
+export function entityResident(state:Exploration,entity:StreetEntity):ResidentScenario {
+ const scenario=scenarioFor(state.placeId,state.year,state.scenarioId);
+ const ids=Array.from(new Set([...entity.claims.flatMap(c=>c.sourceIds),...(scenario?.sourceIds||[])]));
+ return {id:entity.id,role:entity.role||entity.title,activity:entity.activity||entity.description,thought:entity.thoughts?.[(state.year-2015)%(entity.thoughts?.length||1)]||'I should keep my attention on this small task.',sprite:entity.sprite,year:state.year,location:placeById(state.placeId)?.name||'North Korea',context:[scenario?.period,scenario?.description,...entity.claims.map(c=>`${c.element}: ${c.description}`)].filter(Boolean).join('\n'),sources:ids.map(sourceById).map(s=>({title:s.title,url:s.url,captured:s.captured,limitation:s.limitation}))};
 }
 export const nanoOptions={expectedInputs:[{type:'text' as const,languages:['en']}],expectedOutputs:[{type:'text' as const,languages:['en']}]};
 export interface NanoSession {prompt:(input:string,options:{signal:AbortSignal;responseConstraint:object})=>Promise<string>;destroy:()=>void;}

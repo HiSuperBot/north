@@ -106,3 +106,27 @@
 @media(min-width:701px){.person-panel-open .map-stage{right:360px}.person-panel-open .zoom-axis{right:378px}.person-panel-open .bottom-dock{right:433px}.person-panel-open .map-footer{right:360px}.person-panel-open .map-footer>button{display:none}.person-panel-open .simulation-toolbar{max-width:calc(100% - 570px);flex-wrap:wrap}.person-panel-open .simulation-toolbar>span{display:none}.person-panel-open .region-switch{left:calc((100% - 360px)/2)}}
 .person-inspector .inspector-close{position:sticky;top:0;right:0;float:right;margin:-8px -8px 0 0;background:#182025;z-index:2}
 @media(max-width:700px){.person-inspector{inset:auto 0 0;width:100%;height:auto;max-height:min(56dvh,calc(100dvh - 225px));padding:25px 24px 28px;border-radius:12px 12px 0 0;border-top:1px solid #c5d6b366;box-shadow:0 -12px 40px #0006}.person-inspector .person-heading{margin:13px 0}.person-inspector .thought-bubble{font-size:20px;line-height:1.45}.person-inspector .person-situation{margin-bottom:12px}.person-inspector .person-context{padding:12px 0;margin:14px 0}.street-mode .place-entry p{display:none}.street-mode .place-card{padding:10px 12px}}
+
+/* Common street objects and scenario controls. */
+.country-cards>button{flex:1;width:auto;min-width:0}.country-cards small{line-height:1.45}
+.street-tools{position:absolute;z-index:6;left:132px;top:211px;max-width:calc(100% - 235px);display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.street-tools .simulation-toolbar{position:static;left:auto;right:auto;top:auto;max-width:none!important;flex-wrap:wrap;gap:2px}
+.simulation-toolbar button[aria-pressed=false]{color:#84979b;background:#ffffff04}.simulation-toolbar button[aria-pressed=true]{color:#dce9c6;background:#dce9c617}
+.scenario-switch{display:flex;gap:3px;padding:4px;background:#172025ed;border:1px solid #ffffff25;border-radius:4px}
+.scenario-switch button,.event-entry{border:0;padding:9px 12px;color:#c3cfcc;background:transparent;font-size:12px;border-radius:2px}
+.scenario-switch button[aria-pressed=true]{background:#d6e3c2;color:#263325}.event-entry{background:#172025ed;border:1px solid #d6e3c255;color:#dce9c6}
+.street-mode .view-label{max-width:355px}.street-mode .view-label .view-year{display:inline}.street-mode .view-label small{display:block;font-size:11px;line-height:1.4}
+.street-entity{position:absolute;border:0;background:none;padding:5px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#eff1dc;min-width:28px;min-height:30px}
+.street-entity img{display:block;max-width:76px;max-height:47px;object-fit:contain;filter:drop-shadow(1px 3px 1px #24332677);pointer-events:none}
+.street-entity.entity-soldier img,.street-entity.entity-porter img{height:30px;width:auto}.street-entity.entity-vendor img{height:43px;width:auto}.street-entity.entity-cyclist img{height:34px;width:auto}.street-entity.entity-train img{max-width:100px;height:auto}
+.street-entity.reverse img{transform:scaleX(-1)}.street-entity.selected:after{content:'';position:absolute;inset:-3px;border:2px solid #f3f2b8;border-radius:50%;box-shadow:0 0 0 4px #f3f2b833;pointer-events:none}
+.street-entity:focus-visible{outline:2px solid #f3f2b8;outline-offset:5px;border-radius:3px}.sprite-fallback{display:none}.sprite-failed .sprite-fallback,.entity-label{display:block;background:#172025ed;border:1px solid #d6e3c277;padding:7px 9px;font-size:11px;border-radius:3px;white-space:nowrap}
+.street-entity.walking img{animation:street-bob .5s ease-in-out infinite alternate}@keyframes street-bob{to{translate:0 -1px}}
+.required-notice{display:block;margin-top:7px;font-size:10px;line-height:1.35}.person-heading>img{max-width:75px;object-fit:contain}
+@media(min-width:701px){.building-panel-open .street-tools{max-width:calc(100% - 635px)}.person-panel-open .street-tools{max-width:calc(100% - 595px)}}
+@media(max-width:1100px){.street-tools{top:277px}.street-mode .view-label{top:159px}}
+@media(max-width:700px){.country-cards>button{width:100%;flex:auto}.street-tools{left:76px;right:60px;top:247px;max-width:none!important;gap:6px}.street-tools .simulation-toolbar{justify-content:flex-start;width:100%}.street-tools .simulation-toolbar button{font-size:11px;min-height:30px;padding:4px 6px}.scenario-switch{flex-wrap:wrap}.scenario-switch button{font-size:10px;padding:6px}.street-mode .view-label{top:135px;left:76px;right:60px;max-width:none;padding:9px;gap:5px 8px}.street-mode .view-label .eyebrow,.street-mode .view-label .view-year{font-size:10px}.street-mode .view-label small{font-size:10px}.street-mode .view-label .evidence-tag{padding:3px 6px;font-size:10px}.region-switch button{padding:8px 9px;font-size:12px}.street-entity img{max-width:65px;max-height:40px}}
+@media(prefers-reduced-motion:reduce){.street-entity.walking img{animation:none}}
+
+@media(min-width:1101px){.street-mode .view-label{top:155px}.street-tools{top:271px}}
+@media(max-width:700px){.street-mode .view-label{top:135px}.street-tools{top:247px}}

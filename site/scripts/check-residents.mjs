@@ -1,11 +1,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import ts from 'typescript';
-const url=code=>'data:text/javascript;base64,'+Buffer.from(code).toString('base64');
-const compile=code=>ts.transpileModule(code,{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
-const contentUrl=url(compile(await fs.readFile('lib/content.ts','utf8')));
-const content=await import(contentUrl);
-const resident=await import(url(compile(await fs.readFile('lib/resident.ts','utf8')).replace("'./content'",JSON.stringify(contentUrl))));
+import { loadLibrary } from './load-library.mjs';
+const content=await loadLibrary('lib/content.ts');
+const resident=await loadLibrary('lib/resident.ts');
 for(const place of content.places)for(let year=2015;year<=2019;year++)for(let index=0;index<24;index++){
  const scenario=resident.residentScenario({year,regionId:place.regionId,placeId:place.id,sceneId:null,view:'street'},index);
  assert.equal(scenario.year,year);assert.equal(scenario.location,place.name);assert.ok(scenario.activity&&scenario.thought);
@@ -21,4 +18,4 @@ assert.equal(await resident.generateNanoThought(api,person,new AbortController()
 response='not valid JSON';assert.equal(await resident.generateNanoThought(api,person,new AbortController().signal,()=>{}),null);assert.equal(destroyed,2);
 const controller=new AbortController();abortDuringPrompt=()=>controller.abort();response=JSON.stringify({thought:'A stale thought must never replace the current person.'});await assert.rejects(resident.generateNanoThought(api,person,controller.signal,()=>{}),{name:'AbortError'});assert.equal(destroyed,3);
 for(const invalid of [{thought:'x'},{thought:'I will visit this place in 2026.'},{thought:'<script>This is not a thought</script>'},{thought:'I should go home now.',extra:'unreviewed'}])assert.equal(resident.parseThought(JSON.stringify(invalid)),null);
-console.log('PASS: 720 region/year/person contexts, original source dates, explicit building-photo identity, Nano API contract, download progress, invalid output, cancellation and session cleanup. Native model generation requires a supported device; the adapter tests use a test double.');
+console.log('PASS: 960 place/year/person contexts, original source dates, explicit building-photo identity, Nano API contract, download progress, invalid output, cancellation and session cleanup. Native model generation requires a supported device; the adapter tests use a test double.');
