@@ -1,0 +1,106 @@
+[
+  {
+    "id": "apartment-cylinder",
+    "bytes": 1038132,
+    "gzipBytes": 202627,
+    "sha256": "b1764ccdd0bcc804620dfa0456bc81738bf2b353b1bb4cc78ee223eb29b9ef3d",
+    "meshParts": 1,
+    "materialDraws": 8
+  },
+  {
+    "id": "apartment-block",
+    "bytes": 314896,
+    "gzipBytes": 45387,
+    "sha256": "d90c63c144508c89868835f3429a47e6ad25a13b22f5eba082c1e07e507fe934",
+    "meshParts": 1,
+    "materialDraws": 8
+  },
+  {
+    "id": "storefront",
+    "bytes": 49712,
+    "gzipBytes": 8406,
+    "sha256": "15be00aed75e970f4569f81183f1d175b7f8b457e83aeed059b2c23337d99911",
+    "meshParts": 1,
+    "materialDraws": 9
+  },
+  {
+    "id": "resident",
+    "bytes": 62904,
+    "gzipBytes": 21925,
+    "sha256": "28b3c202b00b85d6f1253f7767d59c78256211a388f74294eb41518d80434930",
+    "meshParts": 5,
+    "materialDraws": 14
+  },
+  {
+    "id": "commuter",
+    "bytes": 56588,
+    "gzipBytes": 20383,
+    "sha256": "940732cdd6a1ddb4a1b076e68873505bad9c84b80504da2aca481b86ec21f799",
+    "meshParts": 5,
+    "materialDraws": 13
+  },
+  {
+    "id": "porter",
+    "bytes": 62380,
+    "gzipBytes": 21383,
+    "sha256": "fdbf956c4e19ae3ef03879c10b79700ffb77fd6ffa106e00953a850dd4154164",
+    "meshParts": 6,
+    "materialDraws": 16
+  },
+  {
+    "id": "vendor",
+    "bytes": 104080,
+    "gzipBytes": 31933,
+    "sha256": "63c6af59df27998d7839e6d6b67919e2561571f885315a6662e16b75eaaa5125",
+    "meshParts": 6,
+    "materialDraws": 18
+  },
+  {
+    "id": "cyclist",
+    "bytes": 87912,
+    "gzipBytes": 30843,
+    "sha256": "d2e5e9f915648f51936540aba1fe940e3ac8a8efc3d73a7f3208b8d1198bd090",
+    "meshParts": 6,
+    "materialDraws": 19
+  },
+  {
+    "id": "bus",
+    "bytes": 135944,
+    "gzipBytes": 27368,
+    "sha256": "068bc6fb3e2fc7564b35a3f3a79aa3d2922284e15c42b4fbdf9134a517fc6bf1",
+    "meshParts": 1,
+    "materialDraws": 10
+  },
+  {
+    "id": "shelter",
+    "bytes": 13860,
+    "gzipBytes": 2915,
+    "sha256": "fc8997d02c91bfa6832ff35b083961329f13be56a9f5e08f009d8dffe33a0732",
+    "meshParts": 1,
+    "materialDraws": 5
+  },
+  {
+    "id": "streetlamp",
+    "bytes": 12604,
+    "gzipBytes": 5616,
+    "sha256": "0f237e3e5f7cf6d09aa120db4fe343802219873e8eeb10d59958b751d3e61515",
+    "meshParts": 1,
+    "materialDraws": 4
+  },
+  {
+    "id": "tree",
+    "bytes": 86136,
+    "gzipBytes": 26100,
+    "sha256": "2060c4698630bb2ca134e8255925849104e4dffc2bb4a236dc41e143eb1dea9a",
+    "meshParts": 1,
+    "materialDraws": 3
+  },
+  {
+    "id": "bench",
+    "bytes": 27044,
+    "gzipBytes": 4847,
+    "sha256": "abdb4cc800f0d297e8b70e05be16535bebd99e23ebfffe2e823cf876d76ffdd6",
+    "meshParts": 1,
+    "materialDraws": 2
+  }
+]
