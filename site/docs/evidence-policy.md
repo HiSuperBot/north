@@ -94,3 +94,13 @@ People, identities, roles, routines, and thoughts are fictional scenarios. Nano 
 Keep **AI Reconstruction** visible for both prepared and generated thoughts. Describe a supported output as generated on-device, not as testimony. Structural output validation cannot guarantee factual correctness. Do not make real people, unsupported political views, prices, specific services, or historical events into unqualified claims.
 
 Public-figure reenactment is outside this pilot. Any future recorded-event reconstruction needs its own source review and must distinguish the record from unobserved additions.
+
+## Military and border context review
+
+`content/military-source-review.json` retains original photograph metadata, reusable derivatives, landmark matches, and the current geometry extract. The October 2015 parade photographs are dated by EXIF; their exact street viewpoints remain unverified. A separate contemporaneous event report locates the parade at the square and records tanks. Obscured vehicle chassis do not establish a particular model. The optional 2013 tank reference retains its earlier date and is not a 2015 observation.
+
+The June 2018 JSA photograph shows ROK guards, blue conference buildings, and Panmungak. It predates the October disarmament. The December 2017 guard photo supplies DPRK period context; no fictional thought is assigned to the photographed person. The UNC record documents JSA demilitarization, not the whole DMZ. Generated guards, counts, locations, and activities remain fictional.
+
+Public-domain U.S. official imagery retains its source credit and required non-endorsement notice. CC BY-SA 2.0 and 4.0 photographs link to their actual license versions. OpenStreetMap footprints and the MDL alignment are contemporary derived data under ODbL, not surveyed legal boundaries or historical deployment evidence.
+
+`content/street-sprite-production.json` records exact written prompts, generation and crop/resampling review for all nine new sprites. No downloaded photographs were image-generation inputs. Period facts are reviewed context for the illustrations, not proof that a generated vehicle, uniform, sales table, or person existed at a particular place.

@@ -61,7 +61,7 @@ Use `lib/content.ts` as the reviewed source of truth. Add or update `Source` rec
 
 A scene's hotspot uses image-relative percentages. Its target must exist and belong to the same place. Parent links must remain acyclic. Images live in `public/scenes/`; their URLs start with `/scenes/`.
 
-The checks intentionally encode the pilot's current six-place scope. If an approved scope expansion changes that count, update the checks and documentation together rather than bypassing validation.
+The checks intentionally encode the pilot's current eight-place scope. If an approved scope expansion changes that count, update the checks and documentation together rather than bypassing validation.
 
 ## Useful exploration paths
 

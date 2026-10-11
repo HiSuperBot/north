@@ -6,7 +6,7 @@ The dated [review record](../content/qa.md) is the record of performed checks. I
 
 The currently recorded review includes:
 
-- The complete apartment exploration path, all twelve prepared scene links, reverse navigation, refresh, browser history, and malformed-link recovery.
+- The complete apartment exploration path, all prepared scene links, reverse navigation, refresh, browser history, and malformed-link recovery.
 - Map/street zoom transitions and restoring the street camera when reselecting a place.
 - Direct building selection, changing selected buildings while the map remains interactive, correct photo association, gallery production labels, and image-specific evidence.
 - Direct person selection without also selecting the building underneath, pause/resume, and contextual fictional thought display.
@@ -23,15 +23,18 @@ npx tsc --noEmit
 node scripts/check-content.mjs
 node scripts/check-residents.mjs
 node scripts/check-street-simulation.mjs
+node scripts/check-street-entities.mjs
 npm run build
 ```
 
 | Check | Coverage | Limit |
 | --- | --- | --- |
 | TypeScript | Component and data contracts | Does not prove runtime/device behavior |
-| Content integrity | Six places, twelve scenes, source IDs, independent-corroboration policy, graph, assets, 60 year/scene URL round trips, invalid URLs, rights records, road interpolation | Does not verify each historical claim against its source |
-| Resident checks | 720 place/year/person contexts, retained source dates, explicit building-photo association, Nano API contract/progress, rejected output, cancellation, cleanup | Uses a test double for Nano; it is not native inference |
+| Content integrity | Eight places, seventeen scenes, source IDs, independent-corroboration policy, graph, assets, 85 year/scene URL round trips, invalid URLs, rights records, road interpolation | Does not verify each historical claim against its source |
+| Resident checks | 960 place/year/person contexts, retained source dates, explicit building-photo association, Nano API contract/progress, rejected output, cancellation, cleanup | Uses a test double for Nano; it is not native inference |
 | Street simulation | Six placement pools and 10,472 on-road motion samples, stable route identities, spacing, unsuitable roads, endpoint rests, and closed loops | Illustrative movement is not observed pedestrian behavior |
+| Dated street entities | Forty place/year combinations; JSA default and before/after states; parade-only year; invalid/legacy scenario URLs; assets/claims; 8,136 mapped road/rail motion samples | Contextual movement and generated miniatures remain fictional |
+| Pages artifact | Built HTML and base paths, all scene images, map data/worker, representative sprites, absence of private/runtime metadata | Does not prove an Actions deployment succeeded |
 | Build | Client and Worker-compatible production output | A passing build is not a successful hosted deployment |
 
 These are executable consistency checks, not a replacement for editorial review. When the approved content scope changes, adjust the expected counts with the content itself.
@@ -43,9 +46,12 @@ Use this for affected product changes. Record the environment, actual result, da
 ### Navigation and detail
 
 - [ ] Start at the country map and enter each region.
-- [ ] Select each of the three places in each region; follow its complete scene path and return.
+- [ ] Select all eight places across the three regions; follow its complete scene path and return.
 - [ ] Cross the street-mode threshold in both directions; reselect the same place.
 - [ ] Reload a selected year/place/scene and use browser back/forward.
+- [ ] Verify the parade entry selects 2015; other years remove tanks and marching soldiers.
+- [ ] Switch JSA 2018 before/after; verify after is the default and source dates remain visible.
+- [ ] Toggle People, Transport, and Places; confirm selection/panel replacement.
 - [ ] Try unknown IDs and out-of-range years; verify a usable normalized view.
 - [ ] Zoom/pan images without distortion or detail beyond available native resolution.
 - [ ] Confirm hotspots remain attached to the correct image location through zoom/pan.

@@ -4,7 +4,7 @@ This is a working pilot, not a claim that every original MVP acceptance criterio
 
 ## Current foundation
 
-- Two regions, six map anchors, twelve scene records, five original-photo derivatives, six generated life images, and one fictional pedestrian sprite.
+- Three regions, eight map anchors, seventeen scene records, eleven original-photo derivatives (one earlier tank reference remains contextual), six generated life images, and ten fictional sprite assets.
 - Left-hand scenario-year selection for 2015–2019 and right-hand zoom/detail controls.
 - Mapped isometric street rendering, clickable people, contextual prepared thoughts, and photo/information cards for buildings and documented places.
 - Stable pedestrian identities and route progress, road-length spacing, varied illustrative speeds, individual selection pause, and desktop/mobile thought panels.
@@ -12,7 +12,7 @@ This is a working pilot, not a claim that every original MVP acceptance criterio
 - Optional user-triggered Nano rephrasing with unsupported/error fallback.
 - URL/history navigation, image-load retention, reduced motion, and place-list fallback.
 
-## Next priority: street simulation
+## Remaining street review
 
 The user's accepted priority is people movement, building presentation, and click behavior. NASA / OSM remains the selected provider path for now.
 
@@ -27,6 +27,12 @@ The user's accepted priority is people movement, building presentation, and clic
 - Review Haksong geometry gaps and distinguish a district/station anchor from a verified individual building.
 - Review time-specific changes before introducing different annual worlds or implying a verified event in a resident thought.
 - Preserve exact prompts and richer production/review records for newly generated assets. Existing retained briefs cannot recover missing exact original prompts.
+
+## Added dated contexts
+
+Panmunjom includes public landmarks, fictional guards, and 2018 before/after demilitarization. Kim Il Sung Square includes a generic tank and small marching formation only for the recorded 10 October 2015 parade. These are observation-and-discovery scenes; no combat, management, missions, or day-clock simulation is implemented.
+
+Public GitHub Pages uses a checked static build and Actions; the existing owner-private Sites publication is maintained separately.
 
 ## Optional later work
 

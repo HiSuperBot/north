@@ -1,6 +1,6 @@
 # NORTH application
 
-NORTH is an English-language documentary map pilot built with React, TypeScript, Vinext, and MapLibre GL JS. It follows six places in Pyongyang and Aoji from mapped geography into dated photographs and explicitly labeled reconstructions of everyday life.
+NORTH is an English-language documentary map pilot built with React, TypeScript, Vinext, and MapLibre GL JS. It follows eight places in Pyongyang, Aoji, and Panmunjom from mapped geography into dated photographs and explicitly labeled reconstructions of everyday life.
 
 At street zoom, contemporary mapped footprints become isometric buildings and fictional people move along mapped road lines. Building cards show reviewed photos where associated, original dates, map information, and sources. Person cards show imagined routines and thoughts, with optional on-device Gemini Nano rephrasing.
 
@@ -22,6 +22,7 @@ npx tsc --noEmit
 node scripts/check-content.mjs
 node scripts/check-residents.mjs
 node scripts/check-street-simulation.mjs
+node scripts/check-street-entities.mjs
 npm run build
 ```
 
@@ -48,7 +49,10 @@ Gemini Nano is detected through the browser's `LanguageModel` API. It requires n
 - `lib/content.ts`: reviewed Region, Place, Scene, Source, and Claim records.
 - `lib/exploration.ts`: URL parsing, serialization, and interpolation along mapped roads.
 - `lib/resident.ts`: contextual fictional routines, Nano prompts, output checks, and session cleanup.
+- `lib/street-content.ts` and `street-entities.ts`: dated scenarios, typed selectable entities, and mapped transport routes.
+- `lib/hosting.ts`, `static-app/`, and `vite.pages.config.ts`: the standalone static build and shared asset/base-path handling.
 - `lib/street-simulation.ts`: length-aware placement and stable, bounded fictional movement on mapped roads.
+- `content/military-source-review.json`, `street-sprite-production.json`: new photograph metadata, reviewed geometry, exact sprite prompts, and limitations.
 - `content/asset-rights.json`, `production.json`, `shop-prompt.txt`: asset rights and production records.
 - `content/qa.md`: dated review results and explicit gaps.
 - `public/`: served photographs, generated scenes, map data, and MapLibre worker/license.
@@ -62,3 +66,15 @@ Start with [development](docs/development.md), then read [architecture](docs/arc
 The timeline selects a scenario year, not five separately observed historical worlds. Photographs retain their capture dates; generated assets are shared across 2015–2019. Contemporary geometry does not prove historical continuity. Missing heights and rendered appearance are inferred. Aoji includes explicitly labeled Namyang and Chongjin regional references, and Haksong footprint coverage is sparse. The apartment kitchen is a regional household reconstruction, not a verified interior or identified resident.
 
 No free-roaming 3D world, video, live image generation, verified annual world changes, or public-figure reenactment is included in this pilot.
+
+## GitHub Pages
+
+```sh
+npm run build:pages
+node scripts/check-pages.mjs
+npm run preview:pages
+```
+
+The static app serves at `/north/` by default. `PAGES_BASE_PATH` overrides that base; the Actions workflow reads it from GitHub's Pages configuration, including custom domains. This target uses the same explorer components, content, and evidence as Sites, without the runtime map-key endpoint. NASA / OSM and prepared thoughts need no server. A separately supplied `VITE_MAPTILER_KEY` would be a public build-time browser key.
+
+The Pages site is public. Existing Sites access remains owner-private. See [deployment](docs/deployment.md) for the build/publish boundary and troubleshooting.

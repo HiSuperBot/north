@@ -72,3 +72,11 @@ Do not manually repoint the Sites repository at the GitHub remote or treat a Git
 - Review roadmap language so plans are not described as implemented behavior.
 
 For docs-only work, verify text and links and preserve existing passing app checks. A new product deployment is unnecessary when the served behavior and assets have not changed.
+
+## Requested identity and Pages automation
+
+The GitHub project's existing three commits were rewritten at the user's request to `superbot <hisuperbot@proton.me>`, preserving trees, messages, timestamps, and a recoverable local bundle. Its remote was empty before the first project push, so this did not overwrite shared remote history. New project and Sites commits use the same author/committer. Previously published Sites source SHAs are retained because saved deployment records refer to them.
+
+The project-local SSH command authenticates GitHub pushes as HiSuperBot using the user's registered key. Commit identity and push authentication are distinct; no global Git/SSH identity was changed.
+
+`.github/workflows/pages.yml` checks and builds the standalone static app on `main`, then publishes through GitHub's Pages environment. It uses the short-lived Actions token/OIDC permissions, not the local SSH key, for deployment. Sites still uses its separate credential and supported source/package workflow.

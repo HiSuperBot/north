@@ -2,7 +2,7 @@
 
 **Explore North Korea by following documented geography into explicitly labeled reconstructions of everyday life.**
 
-NORTH is an English-language documentary web pilot. It starts with a country map and follows six places in Pyongyang and Aoji into photographs, small details, and imagined life scenes. At street zoom, mapped building footprints become an isometric neighborhood with moving, clickable fictional pedestrians.
+NORTH is an English-language documentary web pilot. It starts with a country map and follows eight places in Pyongyang, Aoji, and Panmunjom into photographs, small details, and imagined life scenes. At street zoom, mapped building footprints become an isometric neighborhood with clickable fictional people, transport, and landmarks. Panmunjom adds a dated demilitarization context; Kim Il Sung Square adds the recorded 10 October 2015 parade.
 
 The central rule is to preserve what sources establish and identify what has been inferred or generated. A photographed apartment can lead into an imagined kitchen; it does not establish the real interior behind that window.
 
@@ -10,6 +10,7 @@ The central rule is to preserve what sources establish and identify what has bee
 
 - A left-hand timeline selects a scenario year from 2015 to 2019; the right-hand controls change map or image detail.
 - Street zoom shows mapped roads, railway lines, extruded buildings, and fictional walkers. Buildings open a photo and information panel on desktop or a bottom sheet on small screens.
+- People, Transport, and Places filters control street objects. The 2015 parade entry selects its event year; JSA 2018 defaults to the after-demilitarization context.
 - People expose an imagined role, routine, and inner thought. Selection pauses and highlights that person; other walkers keep moving. Supported browsers can optionally rephrase a prepared thought with on-device Gemini Nano.
 - Photographs and AI-generated scenes have persistent production labels. The evidence panel retains original source dates, locations, reuse conditions, and limitations.
 - Exploration state survives refresh and browser history. Place lists remain usable when map rendering fails.
@@ -33,6 +34,7 @@ npx tsc --noEmit
 node scripts/check-content.mjs
 node scripts/check-residents.mjs
 node scripts/check-street-simulation.mjs
+node scripts/check-street-entities.mjs
 npm run build
 ```
 
@@ -48,6 +50,7 @@ See the [development guide](site/docs/development.md) for configuration and trou
 | [Development](site/docs/development.md) | Setup, local workflow, configuration, and checks |
 | [Validation](site/docs/validation.md) | Automated coverage, manual review, and outstanding checks |
 | [Roadmap](site/docs/roadmap.md) | Current limits and the next accepted product priorities |
+| [Deployment](site/docs/deployment.md) | Public GitHub Pages Actions and private Sites builds |
 | [Repository workflow](site/docs/repository-workflow.md) | Commits, source ownership, and deployment separation |
 | [Review record](site/content/qa.md) | Dated observations from the local pilot review |
 | [Changelog](CHANGELOG.md) | Notable project changes |
@@ -71,6 +74,10 @@ north/
 ```
 
 The project repository tracks `site/` as ordinary files, not a submodule. A separate local Sites repository may exist at `site/.git`; it is deployment tooling state and is not part of a clone of this repository. Research downloads, local screenshots, dependency caches, and deployment packages are excluded. Reviewed provenance is retained in `site/lib/content.ts` and `site/content/`.
+
+## Hosting
+
+GitHub Pages uses the standalone static build and `.github/workflows/pages.yml`. Pushes to `main` run checks, build with the configured Pages base path, and deploy the artifact. The Pages app has no server or model key requirement. See [deployment](site/docs/deployment.md).
 
 ## Review deployment
 

@@ -2,6 +2,16 @@
 
 This file records notable product and documentation changes. The pilot has not yet adopted numbered releases.
 
+## Street expansion and GitHub Pages — 2026-10-11
+
+- Add Panmunjom JSA and Kim Il Sung Square, bringing the pilot to three regions and eight places. Record dated photographs, source rights, geometry, and equipment-identification limits.
+- Add nine transparent generated miniatures: armed/unarmed guards, tank, bus, cyclist, freight truck/train, handcart, and vendor; retain exact production prompts and review notes.
+- Connect people, transport, landmarks, and buildings to a common selection state with contextual photos, prepared thoughts, source evidence, and desktop/mobile information panels.
+- Add street filters, shared motion controls, road/rail placement, sprite fallbacks, and desktop/mobile moving-entity limits.
+- Restrict the parade to 10 October 2015. Add JSA 2018 before/after demilitarization with the after context as default; recover incompatible scenario URLs and retain legacy links.
+- Add a standalone Vite static target with base-aware assets/navigation and a GitHub Pages Actions build/deploy workflow. Preserve the existing private Sites target.
+- Apply the requested `superbot <hisuperbot@proton.me>` author/committer identity to the project history and new work, with HiSuperBot SSH push authentication.
+
 ## Private pilot update — 2026-10-10
 
 ### Street interaction
