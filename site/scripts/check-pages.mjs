@@ -14,6 +14,9 @@ for(const match of html.matchAll(/(?:src|href)="([^"]+)"/g)){
 const {scenes}=await loadLibrary('lib/content.ts');
 for(const scene of scenes)await fs.access(path.join(directory,scene.image));
 for(const asset of ['maplibre-worker.js','geography.geojson','neighborhoods.geojson','military-neighborhoods.geojson','sprites/tank.png','sprites/soldier-unarmed.png'])await fs.access(path.join(directory,asset));
+const {dioramaAssetIds,dioramaAsset}=await loadLibrary('lib/diorama-catalog.ts');
+for(const id of dioramaAssetIds){const asset=dioramaAsset(id);await fs.access(path.join(directory,asset.model));await fs.access(path.join(directory,asset.thumbnail));}
+assert.ok(!(await fs.readdir(directory)).includes('art'),'Blender sources and render proofs must not be public assets');
 const files=await fs.readdir(directory);
 assert.ok(!files.some(f=>/^\.env|^\.git$|^server$|^\.openai$/.test(f)),'Static artifact must not contain runtime configuration or Git metadata');
 console.log(`PASS: static production HTML, ${base} asset paths, all scene images, map worker/data, representative sprites and no server/private metadata.`);

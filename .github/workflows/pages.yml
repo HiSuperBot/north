@@ -40,6 +40,7 @@ jobs:
           node scripts/check-residents.mjs
           node scripts/check-street-simulation.mjs
           node scripts/check-street-entities.mjs
+          node scripts/check-diorama.mjs
       - name: Build static explorer
         run: npm run build:pages
         env:

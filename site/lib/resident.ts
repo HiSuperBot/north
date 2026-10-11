@@ -1,3 +1,4 @@
+import { dioramaAsset, isDioramaPlace, residentAsset } from './diorama-catalog';
 import { regions, placeById, sceneById, scenes, sourceById } from './content';
 import { scenarioFor, type StreetEntity } from './street-content';
 import type { Exploration } from './exploration';
@@ -19,12 +20,12 @@ export function residentScenario(state:Exploration,index:number):ResidentScenari
  const periodScene=scenes.find(s=>s.placeId===place?.id&&s.type==='AI Reconstruction')||sceneById(place?.entryScene);
  const relevantClaims=periodScene?.claims.filter(c=>c.level!=='AI Reconstruction')||[];
  const sourceIds=Array.from(new Set(relevantClaims.flatMap(c=>c.sourceIds)));
- return {id:`${place?.id||region?.id||'country'}:${state.year}:${index}`,role:person.role,activity:person.activity,thought:person.thoughts[(Math.abs(index)+state.year-2015)%person.thoughts.length],year:state.year,location:place?.name||region?.name||'North Korea',context:relevantClaims.map(c=>`${c.element}: ${c.description}${c.scope?` [${c.scope}]`:''}`).join('\n'),sources:sourceIds.map(sourceById).map(s=>({title:s.title,url:s.url,captured:s.captured,limitation:s.limitation}))};
+ return {sprite:isDioramaPlace(place?.id)?dioramaAsset(residentAsset(place!.id,index)).thumbnail:undefined,id:`${place?.id||region?.id||'country'}:${state.year}:${index}`,role:person.role,activity:person.activity,thought:person.thoughts[(Math.abs(index)+state.year-2015)%person.thoughts.length],year:state.year,location:place?.name||region?.name||'North Korea',context:relevantClaims.map(c=>`${c.element}: ${c.description}${c.scope?` [${c.scope}]`:''}`).join('\n'),sources:sourceIds.map(sourceById).map(s=>({title:s.title,url:s.url,captured:s.captured,limitation:s.limitation}))};
 }
 export function entityResident(state:Exploration,entity:StreetEntity):ResidentScenario {
  const scenario=scenarioFor(state.placeId,state.year,state.scenarioId);
  const ids=Array.from(new Set([...entity.claims.flatMap(c=>c.sourceIds),...(scenario?.sourceIds||[])]));
- return {id:entity.id,role:entity.role||entity.title,activity:entity.activity||entity.description,thought:entity.thoughts?.[(state.year-2015)%(entity.thoughts?.length||1)]||'I should keep my attention on this small task.',sprite:entity.sprite,year:state.year,location:placeById(state.placeId)?.name||'North Korea',context:[scenario?.period,scenario?.description,...entity.claims.map(c=>`${c.element}: ${c.description}`)].filter(Boolean).join('\n'),sources:ids.map(sourceById).map(s=>({title:s.title,url:s.url,captured:s.captured,limitation:s.limitation}))};
+ return {id:entity.id,role:entity.role||entity.title,activity:entity.activity||entity.description,thought:entity.thoughts?.[(state.year-2015)%(entity.thoughts?.length||1)]||'I should keep my attention on this small task.',sprite:entity.visualAssetId?dioramaAsset(entity.visualAssetId).thumbnail:entity.sprite,year:state.year,location:placeById(state.placeId)?.name||'North Korea',context:[scenario?.period,scenario?.description,...entity.claims.map(c=>`${c.element}: ${c.description}`)].filter(Boolean).join('\n'),sources:ids.map(sourceById).map(s=>({title:s.title,url:s.url,captured:s.captured,limitation:s.limitation}))};
 }
 export const nanoOptions={expectedInputs:[{type:'text' as const,languages:['en']}],expectedOutputs:[{type:'text' as const,languages:['en']}]};
 export interface NanoSession {prompt:(input:string,options:{signal:AbortSignal;responseConstraint:object})=>Promise<string>;destroy:()=>void;}

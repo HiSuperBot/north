@@ -130,3 +130,12 @@
 
 @media(min-width:1101px){.street-mode .view-label{top:155px}.street-tools{top:271px}}
 @media(max-width:700px){.street-mode .view-label{top:135px}.street-tools{top:247px}}
+
+/* 3D meshes share the map depth buffer; DOM targets preserve keyboard and touch access. */
+.diorama-hit{background:transparent!important;border-color:transparent!important;box-shadow:none!important;filter:none!important}.diorama-hit>img,.diorama-hit>.sprite-fallback{opacity:0!important}.diorama-hit:focus-visible{outline:2px solid #eff8c1;outline-offset:1px;border-radius:50%}.diorama-hit.walking>img{animation:none!important}.person-heading img{image-rendering:auto;object-fit:contain}.person-heading img[src*="thumbnails"]{width:78px;height:84px;filter:none}
+
+/* Compact the street dock so the diorama, and its ground-level people, stay visible. */
+.explorer:has(.simulation-toolbar) .place-entry{display:none}.explorer:has(.simulation-toolbar) .place-card{padding:11px 14px;min-height:50px}.explorer:has(.simulation-toolbar) .place-card small{display:none}.explorer:has(.simulation-toolbar) .dock-heading{padding:12px 18px}.explorer:has(.simulation-toolbar) .bottom-dock{bottom:58px}.explorer:has(.simulation-toolbar) .view-label{background:#18211ddc;padding:11px 13px;border:1px solid #cbd6bd2b;border-radius:3px}
+@media(max-width:700px){.explorer:has(.simulation-toolbar) .bottom-dock{bottom:76px}.explorer:has(.simulation-toolbar) .place-card{padding:10px 12px;min-height:48px}.explorer:has(.simulation-toolbar) .view-label{padding:8px;top:130px;font-size:11px}.explorer:has(.simulation-toolbar) .view-label small{display:none}}
+
+.dock-utilities{display:flex;gap:4px}@media(max-width:700px){.dock-utilities button{font-size:11px;padding:5px;min-height:32px}.dock-utilities svg{display:none}.explorer:has(.simulation-toolbar) .dock-heading{padding:8px}}

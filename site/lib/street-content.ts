@@ -1,4 +1,5 @@
 import type { Claim } from './content';
+import type { DioramaAssetId } from './diorama-catalog';
 
 export type StreetCategory = 'people' | 'transport' | 'places';
 export type StreetEntityType = 'soldier' | 'vendor' | 'porter' | 'cyclist' | 'bus' | 'truck' | 'train' | 'cart' | 'tank' | 'workbench' | 'conference' | 'panmungak' | 'boundary';
@@ -19,6 +20,7 @@ export interface StreetEntity {
   title: string;
   description: string;
   sprite?: string;
+  visualAssetId?: DioramaAssetId;
   photograph?: string;
   photographSourceId?: string;
   period: string;

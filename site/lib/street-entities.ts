@@ -74,15 +74,15 @@ export function planStreetEntities(state: Exploration, geometry: FeatureCollecti
   }
   if(place.regionId==='pyongyang'){
     const bus=moving('bus','An imagined city bus','A possible bus journey inspired by a photographed Pyongyang bus. The service, destinations, timetable and movement are unverified.',5,'/sprites/bus.png');
-    if(bus){bus.photograph='/scenes/bus.webp';bus.photographSourceId='bus-photo';}
+    if(bus){bus.visualAssetId='bus';bus.photograph='/scenes/bus.webp';bus.photographSourceId='bus-photo';}
     const cyclist=moving('cyclist','A bicycle journey','An illustrative cyclist on the mapped ground. This journey and rider are fictional.',2.6,'/sprites/cyclist.png','road',2);
-    if(cyclist){cyclist.role='A cyclist';cyclist.activity='Riding along a mapped road';cyclist.thoughts=['A steady pace will get me there.','I should leave enough time for the ride home.'];}
+    if(cyclist){cyclist.visualAssetId='cyclist';cyclist.role='A cyclist';cyclist.activity='Riding along a mapped road';cyclist.thoughts=['A steady pace will get me there.','I should leave enough time for the ride home.'];}
     const porter=moving('porter','Carrying an errand home','A fictional neighbor carrying a small bundle through the neighborhood.',1.1,'/scenes/pedestrian.png','road',3);
-    if(porter){porter.role='A neighbor with a parcel';porter.activity='Carrying a household errand home';porter.thoughts=['I should put this down before starting the next chore.','One more short walk, then I can rest.'];}
+    if(porter){porter.visualAssetId='porter';porter.role='A neighbor with a parcel';porter.activity='Carrying a household errand home';porter.thoughts=['I should put this down before starting the next chore.','One more short walk, then I can rest.'];}
     if(place.id==='kwangbok-store'){
       const anchor=nearestRoute(geometry,place.coordinates,'road');
       if(anchor){const point=streetEntityMotion({id:'anchor',type:'cart',category:'transport',title:'',description:'',period:'',position:place.coordinates,claims:[],route:anchor.feature.geometry.coordinates,speed:1,offset:anchor.along},0).position;
-        add('vendor','An imagined roadside sale','An illustrative small sales table near the store area. This table, goods and sale are not observations of the department store.',{position:point,sprite:'/sprites/vendor.png',role:'A seller',activity:'Waiting beside an imagined sales table',thoughts:['I should keep the goods neatly arranged.','I wonder what the next visitor will be looking for.'],photograph:'/scenes/store.webp',photographSourceId:'shop-photo'});
+        add('vendor','An imagined roadside sale','An illustrative small sales table near the store area. This table, goods and sale are not observations of the department store.',{position:point,visualAssetId:'vendor',sprite:'/sprites/vendor.png',role:'A seller',activity:'Waiting beside an imagined sales table',thoughts:['I should keep the goods neatly arranged.','I wonder what the next visitor will be looking for.'],photograph:'/scenes/store.webp',photographSourceId:'shop-photo'});
       }
     }
   }else{

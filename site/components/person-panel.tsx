@@ -5,6 +5,7 @@ import { BookOpen, Sparkles, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { nanoOptions, generateNanoThought, type NanoAPI, type ResidentScenario } from '@/lib/resident';
 export default function PersonPanel({person,onClose,onEvidence}:{person:ResidentScenario;onClose:()=>void;onEvidence:()=>void}){
+ const [portrait,setPortrait]=useState(person.sprite||'/scenes/pedestrian.png');
  const [availability,setAvailability]=useState('checking');const [thought,setThought]=useState(person.thought);const [generated,setGenerated]=useState(false);const [busy,setBusy]=useState(false);const [status,setStatus]=useState('');const request=useRef<AbortController|null>(null);
  useEffect(()=>{let active=true;const api=(window as Window&{LanguageModel?:NanoAPI}).LanguageModel;if(!api)setAvailability('unavailable');else api.availability(nanoOptions).then(value=>{if(active)setAvailability(value);}).catch(()=>{if(active)setAvailability('unavailable');});return()=>{active=false;request.current?.abort();request.current=null;};},[]);
  const generate=async()=>{
@@ -17,7 +18,7 @@ export default function PersonPanel({person,onClose,onEvidence}:{person:Resident
  };
  const supported=availability!=='checking'&&availability!=='unavailable';
  return <aside className="inspector person-inspector" aria-label="Person information"><button className="inspector-close" onClick={onClose} aria-label="Close information"><X size={18}/></button>
- <span className="eyebrow">IMAGINED PERSON · {person.year}</span><div className="person-heading"><img src={assetUrl(person.sprite||"/scenes/pedestrian.png")} alt=""/><div><h2>{person.role}</h2><p>{person.activity}</p></div></div><div className="person-situation"><span>{person.location}</span><small>Selected person · paused while you look</small></div><div className="thought-bubble" aria-live="polite">“{thought}”</div>
+ <span className="eyebrow">IMAGINED PERSON · {person.year}</span><div className="person-heading"><img src={assetUrl(portrait)} onError={()=>setPortrait("/scenes/pedestrian.png")} alt=""/><div><h2>{person.role}</h2><p>{person.activity}</p></div></div><div className="person-situation"><span>{person.location}</span><small>Selected person · paused while you look</small></div><div className="thought-bubble" aria-live="polite">“{thought}”</div>
  <div className="thought-origin"><span className="evidence-tag level-ai-reconstruction">AI Reconstruction</span><small>{generated?'Gemini Nano · on device':'Prepared scenario'}</small></div>
  <p className="inspector-note">An imagined thought, not a real person’s testimony. The scenario supplies the period and situation; this individual’s experience is fictional.</p>
  {supported&&<div className="nano-controls"><Button variant="outline" onClick={()=>void generate()} disabled={busy}><Sparkles size={15}/>{busy?'Preparing…':availability==='available'?'Imagine another thought':'Enable on-device thoughts'}</Button>{busy&&<Button variant="ghost" onClick={()=>request.current?.abort()}>Cancel</Button>}<small>{availability==='available'?'Runs locally in this browser.':'Chrome may download a large model on first use.'}</small></div>}
