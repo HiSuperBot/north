@@ -41,6 +41,7 @@ jobs:
           node scripts/check-street-simulation.mjs
           node scripts/check-street-entities.mjs
           node scripts/check-diorama.mjs
+          node scripts/check-atlas.mjs
       - name: Build static explorer
         run: npm run build:pages
         env:

@@ -1,0 +1,678 @@
+{
+  "reviewedAt": "2026-10-12",
+  "scope": "Area-level public documentary references. No weapon storage, stockpile, live deployment, tunnel layout or new street simulation is inferred.",
+  "coordinatePolicy": "All markers rounded to 0.01 degrees. Reference points are not boundaries; original mapping and observation dates remain separate.",
+  "sources": [
+    {
+      "id": "atlas-iaea-2019",
+      "title": "Application of Safeguards in the DPRK · GOV/2019/33",
+      "url": "https://www.iaea.org/sites/default/files/gc/gc63-20.pdf",
+      "creator": "International Atomic Energy Agency",
+      "captured": "Reporting period: August 2018–August 2019",
+      "published": "19 August 2019",
+      "region": "DPRK · Yongbyon",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-iaea-2019",
+      "limitation": "Remote monitoring and assessment. IAEA lacked on-site access and could not confirm operational status, design or the purpose of activities."
+    },
+    {
+      "id": "atlas-yongbyon-location",
+      "title": "Yongbyon Nuclear Scientific Research Center · location archive",
+      "url": "https://www.38north.org/yongbyonarchive/",
+      "creator": "38 North",
+      "captured": "Coordinate reference; not a dated observation",
+      "published": "Unknown · reviewed 11 October 2026",
+      "region": "Yongbyon, North Pyongan",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-yongbyon-location",
+      "limitation": "Published area coordinate only; no facility outline, weapon inventory or current deployment is established."
+    },
+    {
+      "id": "atlas-ctbto-2017",
+      "title": "September 2017 DPRK seismic event",
+      "url": "https://www.ctbto.org/our-work/detecting-nuclear-tests/2017-dprk-nuclear-test",
+      "creator": "CTBTO Preparatory Commission",
+      "captured": "3 September 2017 · 03:30 UTC",
+      "published": "3 September 2017 · updated 27 April 2018",
+      "region": "Punggye-ri test-site vicinity",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-ctbto-2017",
+      "limitation": "Seismic evidence of a man-made explosion. CTBTO reported no radionuclide detection; an epicentre estimate is not a surveyed tunnel or warhead location."
+    },
+    {
+      "id": "atlas-punggye-2018",
+      "title": "Destruction at the nuclear test site · review in photos",
+      "url": "https://www.38north.org/2018/05/punggye052518/",
+      "creator": "38 North",
+      "captured": "24 May 2018 · journalist visit",
+      "published": "25 May 2018",
+      "region": "Punggye-ri",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-punggye-2018",
+      "limitation": "Documents a demolition event; it does not establish irreversible closure or present status. Photographs and satellite imagery are linked, not copied."
+    },
+    {
+      "id": "atlas-sohae-2018",
+      "title": "Sohae · no new dismantlement activity",
+      "url": "https://www.38north.org/2018/10/sohae100418/",
+      "creator": "Jack Liu, Peter Makowsky and 38 North",
+      "captured": "Satellite observations through 27 September 2018",
+      "published": "4 October 2018",
+      "region": "Sohae / Tongchang-ri",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-sohae-2018",
+      "limitation": "Dated satellite interpretation. No claim about present activity, a weapon stockpile or all of the selected year. Imagery is not reused."
+    },
+    {
+      "id": "atlas-trade-2019",
+      "title": "A snapshot of coal supply-chain activity · Part II",
+      "url": "https://www.38north.org/2019/04/supplychaincoal040119/",
+      "creator": "38 North",
+      "captured": "Selected satellite observations, 2016–March 2019",
+      "published": "1 April 2019",
+      "region": "Nampo, Rajin, Sinuiju and Tumangang",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-trade-2019",
+      "limitation": "Sparse snapshots; absence of a vehicle does not establish a stopped service. This app does not report present cargo, timetables or sanctions violations by individual actors."
+    },
+    {
+      "id": "atlas-kaesong",
+      "title": "Historic Monuments and Sites in Kaesong",
+      "url": "https://whc.unesco.org/en/list/1278/",
+      "creator": "UNESCO World Heritage Centre",
+      "captured": "Inscription: 2013 · descriptive record, not an annual observation",
+      "published": "Unknown page-update date · reviewed 11 October 2026",
+      "region": "Kaesong",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-kaesong",
+      "limitation": "A serial heritage property. The city-area marker does not locate every component or define its protected boundary."
+    },
+    {
+      "id": "atlas-paektu",
+      "title": "Mount Paektu Biosphere Reserve",
+      "url": "https://www.unesco.org/en/mab/mount-paektu",
+      "creator": "UNESCO · Man and the Biosphere Programme",
+      "captured": "Nomination: 1989 · descriptive record",
+      "published": "Unknown page-update date · reviewed 11 October 2026",
+      "region": "Mount Paektu reserve",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-paektu",
+      "limitation": "Published reserve reference coordinate, not a summit pin or boundary. Current descriptive details are not annual visitor or ecosystem observations."
+    },
+    {
+      "id": "atlas-kumgang",
+      "title": "Mount Kumgang Biosphere Reserve",
+      "url": "https://www.unesco.org/en/mab/mount-kumgang",
+      "creator": "UNESCO · Man and the Biosphere Programme",
+      "captured": "Nomination: 2018 · descriptive record",
+      "published": "Unknown page-update date · reviewed 11 October 2026",
+      "region": "Mount Kumgang reserve",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-kumgang",
+      "limitation": "Published reserve reference coordinate, not a summit pin or tourism access information. The nomination date must not be applied before 2018."
+    },
+    {
+      "id": "atlas-osm-punggye",
+      "title": "Punggye-ri test-site area · mapped reference",
+      "url": "https://www.openstreetmap.org/relation/6574505",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping retrieved 11 October 2026",
+      "published": "Individual feature history; see original",
+      "region": "Punggye-ri test-site area",
+      "rights": "ODbL 1.0 · area reference derived from OSM",
+      "reuse": "data",
+      "original": "atlas-osm-punggye",
+      "limitation": "The geocoder reference has been rounded to two decimals. Area-level location only; contemporary data does not establish 2015–2019 activity or a precise facility boundary."
+    },
+    {
+      "id": "atlas-osm-sohae",
+      "title": "Sohae area · mapped reference",
+      "url": "https://www.openstreetmap.org/relation/18022920",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping retrieved 11 October 2026",
+      "published": "Individual feature history; see original",
+      "region": "Sohae area",
+      "rights": "ODbL 1.0 · area reference derived from OSM",
+      "reuse": "data",
+      "original": "atlas-osm-sohae",
+      "limitation": "The geocoder reference has been rounded to two decimals. Area-level location only; contemporary data does not establish 2015–2019 activity or a precise facility boundary."
+    },
+    {
+      "id": "atlas-osm-nampo",
+      "title": "Nampo city · mapped reference",
+      "url": "https://www.openstreetmap.org/relation/5453650",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping retrieved 11 October 2026",
+      "published": "Individual feature history; see original",
+      "region": "Nampo city",
+      "rights": "ODbL 1.0 · area reference derived from OSM",
+      "reuse": "data",
+      "original": "atlas-osm-nampo",
+      "limitation": "The geocoder reference has been rounded to two decimals. Area-level location only; contemporary data does not establish 2015–2019 activity or a precise facility boundary."
+    },
+    {
+      "id": "atlas-osm-rajin",
+      "title": "Rajin district · mapped reference",
+      "url": "https://www.openstreetmap.org/relation/13284719",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping retrieved 11 October 2026",
+      "published": "Individual feature history; see original",
+      "region": "Rajin district",
+      "rights": "ODbL 1.0 · area reference derived from OSM",
+      "reuse": "data",
+      "original": "atlas-osm-rajin",
+      "limitation": "The geocoder reference has been rounded to two decimals. Area-level location only; contemporary data does not establish 2015–2019 activity or a precise facility boundary."
+    },
+    {
+      "id": "atlas-osm-sinuiju",
+      "title": "Sinuiju city · mapped reference",
+      "url": "https://www.openstreetmap.org/relation/356539",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping retrieved 11 October 2026",
+      "published": "Individual feature history; see original",
+      "region": "Sinuiju city",
+      "rights": "ODbL 1.0 · area reference derived from OSM",
+      "reuse": "data",
+      "original": "atlas-osm-sinuiju",
+      "limitation": "The geocoder reference has been rounded to two decimals. Area-level location only; contemporary data does not establish 2015–2019 activity or a precise facility boundary."
+    },
+    {
+      "id": "atlas-osm-tumangang",
+      "title": "Tumangang station · mapped reference",
+      "url": "https://www.openstreetmap.org/node/4260775818",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping retrieved 11 October 2026",
+      "published": "Individual feature history; see original",
+      "region": "Tumangang station",
+      "rights": "ODbL 1.0 · area reference derived from OSM",
+      "reuse": "data",
+      "original": "atlas-osm-tumangang",
+      "limitation": "The geocoder reference has been rounded to two decimals. Area-level location only; contemporary data does not establish 2015–2019 activity or a precise facility boundary."
+    },
+    {
+      "id": "atlas-osm-kaesong",
+      "title": "Kaesong city · mapped reference",
+      "url": "https://www.openstreetmap.org/relation/5455268",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping retrieved 11 October 2026",
+      "published": "Individual feature history; see original",
+      "region": "Kaesong city",
+      "rights": "ODbL 1.0 · area reference derived from OSM",
+      "reuse": "data",
+      "original": "atlas-osm-kaesong",
+      "limitation": "The geocoder reference has been rounded to two decimals. Area-level location only; contemporary data does not establish 2015–2019 activity or a precise facility boundary."
+    },
+    {
+      "id": "atlas-retail-2017",
+      "title": "Consumerism in North Korea · first-person retail account",
+      "url": "https://www.38north.org/2017/04/rfrank040617/",
+      "creator": "Ruediger Frank · 38 North",
+      "captured": "Kwangbok visit: February 2017; earlier Tongil Market visits: exact dates unknown",
+      "published": "6 April 2017",
+      "region": "Pyongyang · Kwangbok and Tongil Street Market",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-retail-2017",
+      "limitation": "A visitor account, not a census of markets or residents. Earlier market visits have unknown dates; publication is not their observation date. Photos and price tables are linked, not copied."
+    },
+    {
+      "id": "atlas-metro-2019",
+      "title": "The Pyongyang Metro · period visitor guide",
+      "url": "https://koryogroup.com/travel-guide/north-korea-guide-the-pyongyang-metro",
+      "creator": "Koryo Tours",
+      "captured": "Visit/photograph dates unknown; guide describes the system as of its publication",
+      "published": "29 January 2019",
+      "region": "Pyongyang Metro · includes Puhung station",
+      "rights": "Public article/report; link only",
+      "reuse": "link only",
+      "original": "atlas-metro-2019",
+      "limitation": "A tour operator’s visitor-facing account, not independent annual operational verification. No present timetable, fare, passenger count or guaranteed visitor access is established."
+    },
+    {
+      "id": "atlas-osm-tongil",
+      "title": "Former Tongil Street · contemporary road reference",
+      "url": "https://www.openstreetmap.org/way/832760672",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping retrieved 12 October 2026",
+      "published": "Individual feature history; current name uses a 2024 source",
+      "region": "Pyongyang · former Tongil Street / contemporary Rangrang Street",
+      "rights": "ODbL 1.0 · area reference derived from OSM",
+      "reuse": "data",
+      "original": "atlas-osm-tongil",
+      "limitation": "Rounded street-area reference, not a surveyed market location. OSM retains Tongil as an old name; the current street name is not substituted into the 2015–2019 scenario."
+    },
+    {
+      "id": "atlas-osm-puhung",
+      "title": "Puhung station · contemporary area reference",
+      "url": "https://www.openstreetmap.org/way/1007190396",
+      "creator": "OpenStreetMap contributors",
+      "captured": "Contemporary mapping retrieved 12 October 2026",
+      "published": "Individual feature history; see original",
+      "region": "Puhung station area · Pyongyang",
+      "rights": "ODbL 1.0 · area reference derived from OSM",
+      "reuse": "data",
+      "original": "atlas-osm-puhung",
+      "limitation": "Rounded station-area coordinate, not an underground platform outline. Contemporary mapping does not establish a period timetable or entrances."
+    }
+  ],
+  "features": [
+    {
+      "id": "tongil-market",
+      "name": "Tongil Street market area",
+      "korean": "통일거리 시장",
+      "layer": "life",
+      "coordinates": [
+        125.73,
+        38.98
+      ],
+      "spatialSourceIds": [
+        "atlas-osm-tongil"
+      ],
+      "spatialNote": "Former Tongil Street area used for market context; this pin does not survey the market building, entrances or individual stalls.",
+      "summary": "Market shopping in southern Pyongyang, described in a first-person retail account.",
+      "limitations": "The cited market visits have no exact dates. Goods, prices, stall occupants and today’s visitor access are not reconstructed as observed facts. Contemporary OSM labels the road Rangrang Street; the period name is retained here.",
+      "events": [
+        {
+          "date": "2017-04-06",
+          "title": "Retrospective market account published",
+          "text": "The author recalled shopping at Tongil Street Market during earlier visits. Their exact dates were not supplied; this is the publication date.",
+          "sourceIds": [
+            "atlas-retail-2017"
+          ],
+          "level": "Observed"
+        }
+      ]
+    },
+    {
+      "id": "kwangbok-life",
+      "name": "Kwangbok shopping & everyday life",
+      "korean": "광복거리",
+      "layer": "life",
+      "coordinates": [
+        125.69,
+        39.03
+      ],
+      "spatialSourceIds": [
+        "shop-photo",
+        "apartment-map"
+      ],
+      "spatialNote": "Rounded neighborhood reference; use the existing street anchor for mapped building detail.",
+      "summary": "Public exterior photographs connect an urban neighborhood to shopping and domestic-life reconstructions.",
+      "limitations": "The photographed exterior does not verify a shop interior, goods, prices or particular residents. Street activity remains fictional.",
+      "events": [
+        {
+          "date": "2017-04-06",
+          "title": "First-person retail account published",
+          "text": "The author described a February 2017 shopping visit. This dated account provides retail context, not verification of NORTH’s imagined counter scene.",
+          "sourceIds": [
+            "atlas-retail-2017"
+          ],
+          "level": "Observed"
+        },
+        {
+          "date": "2018-10-10",
+          "title": "Apartment exterior photographed",
+          "text": "The existing apartment reference documents an exterior on Kwangbok Street.",
+          "sourceIds": [
+            "apartment-photo"
+          ],
+          "level": "Observed"
+        },
+        {
+          "date": "2019-08-09",
+          "title": "Store exterior photographed",
+          "text": "The existing store reference documents its exterior.",
+          "sourceIds": [
+            "shop-photo"
+          ],
+          "level": "Observed"
+        }
+      ],
+      "entryPlaceId": "kwangbok-store"
+    },
+    {
+      "id": "puhung-metro",
+      "name": "Puhung metro area",
+      "korean": "부흥역",
+      "layer": "life",
+      "coordinates": [
+        125.72,
+        39.01
+      ],
+      "spatialSourceIds": [
+        "atlas-osm-puhung"
+      ],
+      "spatialNote": "Rounded station-area reference, not a mapped underground platform or a verified period entrance.",
+      "summary": "A Pyongyang urban-transport reference on the Chollima metro line.",
+      "limitations": "The period guide reflects a tour operator’s perspective. Specific commute patterns, annual service frequency and present visitor access are not established; no underground scene is supplied.",
+      "events": [
+        {
+          "date": "2019-01-29",
+          "title": "Period metro guide published",
+          "text": "The guide identifies Puhung on the Chollima line and discusses station decoration and visitor travel. Specific visit and photograph dates are unknown.",
+          "sourceIds": [
+            "atlas-metro-2019"
+          ],
+          "level": "Observed"
+        }
+      ]
+    },
+    {
+      "id": "aoji-work",
+      "name": "Aoji coal & work",
+      "korean": "아오지",
+      "layer": "life",
+      "coordinates": [
+        130.36,
+        42.53
+      ],
+      "spatialSourceIds": [
+        "mine-location"
+      ],
+      "spatialNote": "Rounded gazetteer mine-area reference; current coordinates do not establish period equipment.",
+      "summary": "An industrial anchor already connected to NORTH’s documented regional work reconstruction.",
+      "limitations": "Mine operations, equipment, working conditions and individual thoughts are not direct observations of this location in each selected year.",
+      "events": [
+        {
+          "date": "2016",
+          "title": "Historical name reference",
+          "text": "The terminology source provides Aoji place-name context. It does not document the depicted working scene.",
+          "sourceIds": [
+            "mine-name"
+          ],
+          "level": "Observed"
+        }
+      ],
+      "entryPlaceId": "aoji-coal"
+    },
+    {
+      "id": "yongbyon",
+      "name": "Yongbyon research area",
+      "korean": "영변",
+      "layer": "nuclear",
+      "coordinates": [
+        125.75,
+        39.8
+      ],
+      "spatialSourceIds": [
+        "atlas-yongbyon-location"
+      ],
+      "spatialNote": "Rounded public research-centre reference; not an individual reactor or storage location.",
+      "summary": "A publicly documented nuclear research area with reactors and fuel-related facilities.",
+      "limitations": "A nuclear facility marker does not identify assembled weapons, quantities or storage. Operational assessments retain their original report dates.",
+      "events": [
+        {
+          "date": "2019-08-19",
+          "title": "IAEA remote-monitoring report",
+          "text": "The report described reactor and fuel-facility indications, while stressing the absence of on-site verification.",
+          "sourceIds": [
+            "atlas-iaea-2019"
+          ],
+          "level": "Inferred"
+        }
+      ]
+    },
+    {
+      "id": "punggye-ri",
+      "name": "Punggye-ri test-site area",
+      "korean": "풍계리",
+      "layer": "nuclear",
+      "coordinates": [
+        129.09,
+        41.28
+      ],
+      "spatialSourceIds": [
+        "atlas-osm-punggye"
+      ],
+      "spatialNote": "Rounded site-area reference. The seismic location estimate has a separate uncertainty area.",
+      "summary": "The area associated with publicly recorded underground test events and a 2018 demolition visit.",
+      "limitations": "Neither the marker nor the demolition record establishes a warhead depot or the current usability of tunnels.",
+      "events": [
+        {
+          "date": "2017-09-03",
+          "title": "Seismic event detected",
+          "text": "CTBTO recorded a signal consistent with a man-made explosion in the test-site vicinity; this was a seismic assessment.",
+          "sourceIds": [
+            "atlas-ctbto-2017"
+          ],
+          "level": "Observed"
+        },
+        {
+          "date": "2018-05-24",
+          "title": "Journalist-observed demolition",
+          "text": "International journalists documented destruction of entrances and buildings. The extent and permanence of underground damage were not verified here.",
+          "sourceIds": [
+            "atlas-punggye-2018"
+          ],
+          "level": "Observed"
+        }
+      ]
+    },
+    {
+      "id": "sohae",
+      "name": "Sohae launch area",
+      "korean": "서해",
+      "layer": "space",
+      "coordinates": [
+        124.7,
+        39.66
+      ],
+      "spatialSourceIds": [
+        "atlas-osm-sohae"
+      ],
+      "spatialNote": "Rounded launch-area reference, not an engine stand or launch-pad outline.",
+      "summary": "A publicly documented space-launch facility, often referred to as Tongchang-ri.",
+      "limitations": "A launch site is distinct from a nuclear test site or a verified weapon-storage location. The 2018 article does not establish current readiness.",
+      "events": [
+        {
+          "date": "2018-09-27",
+          "title": "Dated satellite assessment",
+          "text": "38 North reported no further dismantlement observed since early August in the imagery reviewed for its October article.",
+          "sourceIds": [
+            "atlas-sohae-2018"
+          ],
+          "level": "Inferred"
+        }
+      ]
+    },
+    {
+      "id": "nampo",
+      "name": "Nampo port region",
+      "korean": "남포",
+      "layer": "transport",
+      "coordinates": [
+        125.41,
+        38.74
+      ],
+      "spatialSourceIds": [
+        "atlas-osm-nampo"
+      ],
+      "spatialNote": "Rounded city or station-area reference, not the surveyed location of a quay, yard or bridge.",
+      "summary": "Western port region linked to the Taedong River and maritime trade.",
+      "limitations": "The marker summarizes a transport region. Cargo, route operation and traffic volumes are not live data or inferred for every year.",
+      "events": [
+        {
+          "date": "2019-04-01",
+          "title": "Period transport study",
+          "text": "A 38 North study compared sparse 2016–2019 imagery of ports and border rail yards.",
+          "sourceIds": [
+            "atlas-trade-2019"
+          ],
+          "level": "Inferred"
+        }
+      ]
+    },
+    {
+      "id": "rajin",
+      "name": "Rajin port & railway region",
+      "korean": "라진",
+      "layer": "transport",
+      "coordinates": [
+        130.3,
+        42.25
+      ],
+      "spatialSourceIds": [
+        "atlas-osm-rajin"
+      ],
+      "spatialNote": "Rounded city or station-area reference, not the surveyed location of a quay, yard or bridge.",
+      "summary": "A northeastern port region connected with a cross-border railway corridor.",
+      "limitations": "The marker summarizes a transport region. Cargo, route operation and traffic volumes are not live data or inferred for every year.",
+      "events": [
+        {
+          "date": "2019-04-01",
+          "title": "Period transport study",
+          "text": "A 38 North study compared sparse 2016–2019 imagery of ports and border rail yards.",
+          "sourceIds": [
+            "atlas-trade-2019"
+          ],
+          "level": "Inferred"
+        }
+      ]
+    },
+    {
+      "id": "sinuiju",
+      "name": "Sinuiju border railway region",
+      "korean": "신의주",
+      "layer": "transport",
+      "coordinates": [
+        124.4,
+        40.09
+      ],
+      "spatialSourceIds": [
+        "atlas-osm-sinuiju"
+      ],
+      "spatialNote": "Rounded city or station-area reference, not the surveyed location of a quay, yard or bridge.",
+      "summary": "A city-area reference for the railway and river crossing toward Dandong.",
+      "limitations": "The marker summarizes a transport region. Cargo, route operation and traffic volumes are not live data or inferred for every year.",
+      "events": [
+        {
+          "date": "2019-04-01",
+          "title": "Period transport study",
+          "text": "A 38 North study compared sparse 2016–2019 imagery of ports and border rail yards.",
+          "sourceIds": [
+            "atlas-trade-2019"
+          ],
+          "level": "Inferred"
+        }
+      ]
+    },
+    {
+      "id": "tumangang",
+      "name": "Tumangang railway region",
+      "korean": "두만강",
+      "layer": "transport",
+      "coordinates": [
+        130.61,
+        42.42
+      ],
+      "spatialSourceIds": [
+        "atlas-osm-tumangang"
+      ],
+      "spatialNote": "Rounded city or station-area reference, not the surveyed location of a quay, yard or bridge.",
+      "summary": "A railway-area reference near the crossing toward Khasan in Russia.",
+      "limitations": "The marker summarizes a transport region. Cargo, route operation and traffic volumes are not live data or inferred for every year.",
+      "events": [
+        {
+          "date": "2019-04-01",
+          "title": "Period transport study",
+          "text": "A 38 North study compared sparse 2016–2019 imagery of ports and border rail yards.",
+          "sourceIds": [
+            "atlas-trade-2019"
+          ],
+          "level": "Inferred"
+        }
+      ]
+    },
+    {
+      "id": "kaesong-heritage",
+      "name": "Kaesong historic city",
+      "korean": "개성",
+      "layer": "heritage",
+      "coordinates": [
+        126.55,
+        37.97
+      ],
+      "spatialSourceIds": [
+        "atlas-osm-kaesong"
+      ],
+      "spatialNote": "City-area reference for a serial property, not its individual monuments or protected boundaries.",
+      "summary": "UNESCO-listed historic monuments and sites associated with the Koryo period.",
+      "limitations": "The entry is heritage context; it does not establish tourist access, opening hours or the condition of every monument in the selected year.",
+      "events": [
+        {
+          "date": "2013",
+          "title": "World Heritage inscription",
+          "text": "The historic monuments and sites were inscribed on the UNESCO World Heritage List.",
+          "sourceIds": [
+            "atlas-kaesong"
+          ],
+          "level": "Observed"
+        }
+      ]
+    },
+    {
+      "id": "mount-paektu",
+      "name": "Mount Paektu reserve",
+      "korean": "백두산",
+      "layer": "nature",
+      "coordinates": [
+        128.09,
+        41.98
+      ],
+      "spatialSourceIds": [
+        "atlas-paektu"
+      ],
+      "spatialNote": "Rounded UNESCO reserve coordinate. This is not the summit or a surveyed reserve boundary.",
+      "summary": "A high volcanic mountain landscape and biosphere reserve beside the Chinese border.",
+      "limitations": "The designation and landscape description do not establish annual tourism access, wildlife sightings or a real-time volcanic hazard assessment.",
+      "events": [
+        {
+          "date": "1989",
+          "title": "Biosphere-reserve nomination",
+          "text": "UNESCO records the reserve nomination in 1989.",
+          "sourceIds": [
+            "atlas-paektu"
+          ],
+          "level": "Observed"
+        }
+      ]
+    },
+    {
+      "id": "mount-kumgang",
+      "name": "Mount Kumgang reserve",
+      "korean": "금강산",
+      "layer": "nature",
+      "coordinates": [
+        128.13,
+        38.64
+      ],
+      "spatialSourceIds": [
+        "atlas-kumgang"
+      ],
+      "spatialNote": "Rounded UNESCO reserve coordinate. This is not a summit or a surveyed reserve boundary.",
+      "summary": "A mountain-to-coast landscape described in UNESCO’s biosphere-reserve record.",
+      "limitations": "Reserve nomination is dated 2018. Earlier selected years must not imply the reserve was already designated; visitor access is not established.",
+      "events": [
+        {
+          "date": "2018",
+          "title": "Biosphere-reserve nomination",
+          "text": "UNESCO records the reserve nomination in 2018.",
+          "sourceIds": [
+            "atlas-kumgang"
+          ],
+          "level": "Observed"
+        }
+      ]
+    }
+  ],
+  "reviewStartedAt": "2026-10-11"
+}

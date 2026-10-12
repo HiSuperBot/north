@@ -41,6 +41,7 @@ export type StreetSelection =
   | { kind: 'person'; index: number }
   | { kind: 'entity'; entity: StreetEntity }
   | { kind: 'building'; building: BuildingInfo }
+  | { kind: 'reference'; featureId: string }
   | { kind: 'place'; placeId: string };
 export type StreetFilters = Record<StreetCategory, boolean>;
 export const initialStreetFilters: StreetFilters = { people: true, transport: true, places: true };
