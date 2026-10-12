@@ -21,6 +21,7 @@ Mobile-sized viewport review is responsive-layout testing; it is not a complete 
 ```sh
 npx tsc --noEmit
 node scripts/check-content.mjs
+node scripts/check-atlas.mjs
 node scripts/check-residents.mjs
 node scripts/check-street-simulation.mjs
 node scripts/check-street-entities.mjs
@@ -32,6 +33,7 @@ npm run build
 | --- | --- | --- |
 | TypeScript | Component and data contracts | Does not prove runtime/device behavior |
 | Content integrity | Eight places, seventeen scenes, source IDs, independent-corroboration policy, graph, assets, 85 year/scene URL round trips, invalid URLs, rights records, road interpolation | Does not verify each historical claim against its source |
+| Documentary atlas | Fourteen references, six themes, original sources, chronological history, rounded area coordinates, 280 feature/year/layer URL round trips, invalid/empty filters, existing street anchors and exact public JSON mirror | Does not establish weapon stockpiles, current activity, facility boundaries or complete annual coverage |
 | Resident checks | 960 place/year/person contexts, retained source dates, explicit building-photo association, Nano API contract/progress, rejected output, cancellation, cleanup | Uses a test double for Nano; it is not native inference |
 | Street simulation | Six placement pools and 10,472 on-road motion samples, stable route identities, spacing, unsuitable roads, endpoint rests, and closed loops | Illustrative movement is not observed pedestrian behavior |
 | Dated street entities | Forty place/year combinations; JSA default and before/after states; parade-only year; invalid/legacy scenario URLs; assets/claims; 8,136 mapped road/rail motion samples | Contextual movement and generated miniatures remain fictional |
@@ -47,6 +49,10 @@ Use this for affected product changes. Record the environment, actual result, da
 
 ### Navigation and detail
 
+- [ ] Toggle map themes, select a reference from a pin/list, and retain filters through refresh/history.
+- [ ] Hide the selected theme and confirm its panel closes; empty filters must show an actionable notice.
+- [ ] Compare dated records before/in/after the selected year and inspect original-source metadata.
+- [ ] Enter the existing Aoji/Kwangbok street from a reference without leaving its source panel open.
 - [ ] Start at the country map and enter each region.
 - [ ] Select all eight places across the three regions; follow its complete scene path and return.
 - [ ] Cross the street-mode threshold in both directions; reselect the same place.

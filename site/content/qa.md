@@ -82,3 +82,22 @@ Limits: native Nano inference, a physical touch device, and a no-WebGL browser r
 - Content, resident, route/scenario and GLB integrity checks passed, together with TypeScript and both production build targets. The new asset check is included in the Pages workflow. Source `.blend`, scripts and PNG proof renders stay outside public release assets.
 
 Limits: this release upgrades three civilian Pyongyang anchors, not every region. Library block/storefront modules do not replace unmatched real buildings. The approved imagegen concept is art direction, not spatial evidence. Native Nano inference, physical touch input and a no-WebGL browser remain untested; annual scenes continue to share reviewed period assets.
+
+
+## Documentary map-layer review — 12 October 2026
+
+The in-app Chromium browser was reviewed against the production static artifact at `/north/` in 1280×720 and 390×844 viewports. This is responsive-browser review, not a physical-touch test. Original source/coordinate review began on 11 October and was completed on 12 October.
+
+- Six theme filters and fourteen public area references are implemented. Markets/urban life, nature and heritage appear first. These add information records, not new deep street places or facility simulations.
+- Direct map selection opened Punggye-ri; list selection and keyboard Enter opened other references. The side sheet showed original dates, source links, rounded-coordinate limits and the selected-year record. Map pin CSS was corrected to retain MapLibre’s absolute coordinate positioning.
+- Yongbyon in 2018 showed its 2019 assessment as later; selecting 2019 changed its context to in-year. Punggye-ri in 2015 showed no retained earlier activity record. Browser Back restored the previous selected year and reference.
+- Mount Kumgang in 2017 displayed the 2018 nomination as later, without implying designation beforehand. Mobile source-sheet scrolling retained a reachable close control. Closing or pressing Escape removed the reference URL parameter and returned to the map.
+- Hiding the selected nuclear theme cleared its reference and sheet. Refresh retained the remaining filters. An explicit empty filter set produced an actionable empty list. An unknown feature, theme and out-of-range year recovered to a usable normalized URL and notice.
+- Tongil market context retained unknown earlier visit dates, its explicit April 2017 publication event and the distinction between the period street name and contemporary OSM naming. Puhung keyboard selection preserved the unknown visit/photo dates of its January 2019 guide.
+- Native WebMCP reference retrieval and navigation were exercised against the same state. The initial twelve-reference revision returned associated source metadata and limits; its later fourteen-reference expansion passed the same data contracts.
+- Aoji’s reference entry opened the existing coal street and removed the reference panel. An inspect-person action honestly reported no visible eligible person in that viewport; it did not create an unrelated persona.
+- An intentional missing MapLibre chunk produced the map-failure notice while the theme/list controls remained usable. The Kwangbok reference still opened its full source sheet, entered its existing street and loaded the dated exterior photograph. The exact map chunk was restored after the test. This exercises a module-load failure, not a no-WebGL device.
+- TypeScript, content, atlas, resident, street-motion/entity, diorama and static-artifact checks passed. The atlas check covers 280 reference/year/filter round trips and an exact downloadable JSON mirror under 40 KB. Existing eight-place/seventeen-scene counts and dated military rules remain intact.
+- No new image or model is required. The new static entry bundle is approximately 434 KB raw / 131 KB gzip; the map and miniature engines remain separate lazy chunks. Original third-party reports and images are linked, not copied into new assets.
+
+Native Nano inference, full physical-touch review and a directly exercised no-WebGL browser remain outstanding. The references do not establish complete annual activity, present operational status, nuclear-warhead storage, exact market/facility boundaries or visitor access.

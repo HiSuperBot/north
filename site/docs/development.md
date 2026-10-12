@@ -25,6 +25,7 @@ Run these from the application directory:
 | `npm run install:ci` | Install the lockfile through the supplied profile-aware wrapper |
 | `npm run dev` | Start the development server |
 | `npx tsc --noEmit` | Check TypeScript without emitting app files |
+| `node scripts/check-atlas.mjs` | Check map-reference sources, dated history, location precision, filters, URLs and the public mirror |
 | `node scripts/check-content.mjs` | Check content graph, sources, rights, URLs, and road interpolation |
 | `node scripts/check-residents.mjs` | Check scenario context and the Nano adapter with a test double |
 | `node scripts/check-street-simulation.mjs` | Check placement, stable identities, and movement on source road lines |
@@ -63,8 +64,11 @@ A scene's hotspot uses image-relative percentages. Its target must exist and bel
 
 The checks intentionally encode the pilot's current eight-place scope. If an approved scope expansion changes that count, update the checks and documentation together rather than bypassing validation.
 
+Area-level documentary references use the separate [map-layer dataset](map-layers.md); they must not increase the eight-place scene count or silently create street scenes. Update its downloadable mirror and run `check-atlas.mjs` whenever editing a reference.
+
 ## Useful exploration paths
 
+- Country → Map layers → public reference → original dated history and sources → country.
 - Country → Pyongyang → Kwangbok apartments → exterior → window → kitchen → evidence → map.
 - Street mode → click a mapped building → card → photograph / reconstruction → matching evidence.
 - Street mode → pause people → click a visible pedestrian → fictional thought → regional context / evidence.

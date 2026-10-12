@@ -2,6 +2,15 @@
 
 This file records notable product and documentation changes. The pilot has not yet adopted numbered releases.
 
+## Documentary map layers — 2026-10-12
+
+- Put markets/urban life, nature and heritage first, and register Tongil Street market context and Puhung metro with dated original sources.
+- Add six filters and fourteen public area references for nuclear research/test sites, a space-launch area, ports/rail, heritage, nature and existing life anchors.
+- Add desktop/mobile source sheets with dated history, original rights and location limits. Contemporary coordinates do not establish historical activity; nuclear-site markers do not identify weapon storage or deployment.
+- Keep the 2015–2019 timeline, shared panel selection, source downloads, legacy exploration links and map-independent reference list. Link Aoji/Kwangbok references into their existing street journeys.
+- Add canonical `feature`/`layers` URL state and native WebMCP reference/source tools. Add content/URL/public-mirror checks to Pages CI and English review documentation.
+- Reuse the existing map and lazy miniature bundles; add no model, image, server, database or runtime geocoding dependency.
+
 ## Pyongyang miniature-diorama pilot — 2026-10-11
 
 - Produce 13 genuine Blender GLBs, compact WebP portraits, a reusable `.blend`, reproducible construction/validation scripts, and English provenance/rights records.
@@ -45,7 +54,7 @@ TypeScript, content/resident/street checks, documentation links, and the product
 
 ### Exploration
 
-- Add country and regional map exploration for Pyongyang and Aoji, with six place anchors and twelve scene records.
+- Add country and regional map exploration for Pyongyang and Aoji, with six place anchors and fourteen scene records.
 - Add a 2015–2019 scenario timeline, map/detail zoom controls, scene hotspots, URL state, and browser-history navigation.
 - Add street simulation using mapped roads, railway lines, and extruded building footprints, with moving fictional pedestrians.
 - Add clickable building cards with photographs where explicitly associated, original capture dates, map records, and sources; use bottom sheets on small screens.

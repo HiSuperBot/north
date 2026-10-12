@@ -8,6 +8,7 @@ The central rule is to preserve what sources establish and identify what has bee
 
 ## Current experience
 
+- Six optional documentary map layers cover fourteen public references, including nuclear research/test areas, a space-launch area, ports/rail, heritage, nature and existing life anchors. Their source sheets retain dated records and location limits; nuclear-site markers do not identify weapon stockpiles.
 - A left-hand timeline selects a scenario year from 2015 to 2019; the right-hand controls change map or image detail.
 - Street zoom shows mapped roads, railway lines, extruded buildings, and fictional walkers. Buildings open a photo and information panel on desktop or a bottom sheet on small screens.
 - People, Transport, and Places filters control street objects. The 2015 parade entry selects its event year; JSA 2018 defaults to the after-demilitarization context.
@@ -32,6 +33,7 @@ Open the address printed by the server, normally `http://127.0.0.1:5173/`. No ma
 ```sh
 npx tsc --noEmit
 node scripts/check-content.mjs
+node scripts/check-atlas.mjs
 node scripts/check-residents.mjs
 node scripts/check-street-simulation.mjs
 node scripts/check-street-entities.mjs
@@ -46,6 +48,7 @@ See the [development guide](site/docs/development.md) for configuration and trou
 | Document | Purpose |
 | --- | --- |
 | [Application README](site/README.md) | App entry points, commands, and configuration |
+| [Documentary map layers](site/docs/map-layers.md) | Area-level locations, dated records, source rights and adding references |
 | [Architecture](site/docs/architecture.md) | Exploration state, rendering, panels, and runtime boundaries |
 | [Evidence and reconstruction policy](site/docs/evidence-policy.md) | Source review, claim levels, asset rights, and production records |
 | [Development](site/docs/development.md) | Setup, local workflow, configuration, and checks |

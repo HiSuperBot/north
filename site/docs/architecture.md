@@ -18,6 +18,8 @@ interface Exploration {
   sceneId: string | null;
   view: 'map' | 'street';
   scenarioId?: string | null;
+  featureId?: string | null;
+  atlasLayers?: AtlasLayerId[];
 }
 ```
 
@@ -27,12 +29,22 @@ Example links:
 
 ```text
 /?year=2018
+/?year=2019&feature=yongbyon
+/?year=2018&layers=transport,nature
 /?year=2018&region=pyongyang
 /?year=2018&region=pyongyang&place=kwangbok-apartment&view=street
 /?year=2018&region=pyongyang&place=kwangbok-apartment&scene=kitchen-life
 ```
 
 Year selection changes the scenario state and prepared thought variant. It does not replace source dates or load a separately observed historical world.
+
+## Documentary map references
+
+`lib/atlas.ts` reads fourteen reviewed area references from `content/map-reference-review.json`. Six theme filters control ordinary MapLibre DOM markers and a scrollable reference list. Selecting a reference opens the shared non-modal right/bottom information sheet and focuses its rounded area coordinate at regional map scale. No facility geometry, equipment, interior or activity simulation is created from these markers. Source records separate contemporary coordinate references from dated observations and assessments. See [map layers](map-layers.md).
+
+The `feature` URL parameter is mutually exclusive with a region/place/scene/scenario. `layers` stores enabled theme IDs in canonical order; an absent parameter enables all themes and `layers=` disables all. Selecting a valid reference enables its theme, while hiding a selected theme clears the reference. Unknown IDs recover to a usable view with a notice. Refresh and browser history restore reference selection and filters. Closing a reference removes its URL parameter; the ordinary life journey remains available.
+
+A reference sheet shows the latest retained record dated at or before the selected year, with an explicit limit on carrying that record forward. Every history item keeps its own date and is labeled earlier, in-year or later. A later record can be read without being treated as an observation in the selected year. Original source links, capture/coverage date, publication, location and reuse limits remain available even if map tiles fail.
 
 ## Map and street simulation
 
@@ -58,7 +70,7 @@ The pilot lazily imports `lib/diorama-layer.ts` and Three.js only for the three 
 
 ## Dated street scenarios and selection
 
-`lib/street-content.ts` defines `StreetScenario`, `StreetEntity`, filters, and a discriminated `StreetSelection`. One selected person, entity, building, or place owns the information panel; replacing it cancels stale Nano work through unmount cleanup.
+`lib/street-content.ts` defines `StreetScenario`, `StreetEntity`, filters, and a discriminated `StreetSelection`. One selected person, entity, building, place, or documentary reference owns the information panel; replacing it cancels stale Nano work through unmount cleanup.
 
 `lib/street-entities.ts` places road transport on eligible mapped road lines and freight trains on rail lines. Retained markers keep their elapsed progress and IDs. Static JSA guards and landmarks use reviewed public geometry with explicitly inferred positions. The MDL is a separate boundary feature, never an actor route. Roads and footprints are contemporary references, not historical observations.
 
@@ -75,6 +87,7 @@ The controller preloads a target before committing a scene transition. A load fa
 ## Information panels
 
 - **Building panel:** a non-modal right sheet on desktop, bottom sheet on small screens. It shows a reviewed photo/gallery when associated, metadata, limits, and original sources. `placeForBuilding()` matches explicit source URLs; proximity alone never assigns a photo.
+- **Map-reference panel:** original-source metadata, recorded history, selected-year context, rounded-coordinate purpose and limits. Public source imagery is linked rather than copied into this layer. Existing Aoji/Kwangbok records offer a button into their prepared street journey.
 - **Person panel:** an imagined role, activity, scenario location/year, inner thought, and regional context. It reserves desktop map space and uses a full-width mobile bottom panel with a persistent close control. No real identity or testimony is represented.
 - **Evidence panel:** a modal provenance sheet for the current scene, selected entity, selected building, or fictional person context. Repeated aliases of one original source are deduplicated in the source list.
 
@@ -106,6 +119,8 @@ When `document.modelContext` or the earlier `navigator.modelContext` interface i
 
 | Tool | Effect |
 | --- | --- |
+| `get_map_references` | Read fourteen area references and all associated original-source records |
+| `navigate_to_map_reference` | Select a public reference and its evidence sheet |
 | `get_exploration_state` | Read the shared exploration state |
 | `navigate_to_place` | Select one of the eight map anchors |
 | `navigate_to_scene` | Preload and open a prepared scene |
@@ -121,6 +136,7 @@ These tools use the same state transitions and content as the UI. Registration i
 | Visual system | `app/globals.css`, `components/ui/` |
 | Geographic rendering | `components/map-view.tsx`, `public/neighborhoods.geojson` |
 | Image exploration | `components/scene-viewer.tsx` |
+| Documentary references | `lib/atlas.ts`, `components/atlas-browser.tsx`, `components/atlas-panel.tsx`, `content/map-reference-review.json` |
 | Metadata and evidence | `lib/content.ts`, `components/evidence-panel.tsx` |
 | Fictional residents | `lib/resident.ts`, `lib/street-simulation.ts`, `components/person-panel.tsx` |
 | Runtime provider key | `lib/map-config.ts`, `app/api/map-config/route.ts`, `build/sites-worker.ts` |

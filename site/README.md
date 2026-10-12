@@ -4,6 +4,8 @@ NORTH is an English-language documentary map pilot built with React, TypeScript,
 
 At street zoom, contemporary mapped footprints become isometric buildings and fictional people move along mapped road lines. Building cards show reviewed photos where associated, original dates, map information, and sources. Person cards show imagined routines and thoughts, with optional on-device Gemini Nano rephrasing.
 
+The country map also offers six documentary layers and fourteen public area references. Each opens a source sheet with original dates and explicit limits. These references do not add fourteen street reconstructions or establish nuclear-warhead locations. See [map-layer content and behavior](docs/map-layers.md).
+
 ## Quick start
 
 Use Node.js **22.13 or newer** and npm. Run these commands in this directory:
@@ -20,6 +22,7 @@ The portable development server normally runs at `http://127.0.0.1:5173/`. Use t
 ```sh
 npx tsc --noEmit
 node scripts/check-content.mjs
+node scripts/check-atlas.mjs
 node scripts/check-residents.mjs
 node scripts/check-street-simulation.mjs
 node scripts/check-street-entities.mjs
@@ -47,6 +50,8 @@ Gemini Nano is detected through the browser's `LanguageModel` API. It requires n
 - `components/map-view.tsx`: map providers, mapped geometry, camera transitions, building selection, and fictional pedestrians.
 - `components/scene-viewer.tsx`: aspect-preserving image detail, pan, hotspots, and bounded zoom.
 - `components/building-panel.tsx`, `person-panel.tsx`, `evidence-panel.tsx`: information and provenance.
+- `lib/atlas.ts`, `components/atlas-browser.tsx`, `atlas-panel.tsx`: public map-reference filters, dated history, source sheets, and existing street-entry links.
+- `content/map-reference-review.json`: reviewed source and area-reference records; `public/credits/map-references.json` is the downloadable mirror.
 - `lib/content.ts`: reviewed Region, Place, Scene, Source, and Claim records.
 - `lib/exploration.ts`: URL parsing, serialization, and interpolation along mapped roads.
 - `lib/resident.ts`: contextual fictional routines, Nano prompts, output checks, and session cleanup.
